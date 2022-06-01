@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrabalhoOrientacaoObjetos01", "TrabalhoOrientacaoObjetos01\TrabalhoOrientacaoObjetos01.csproj", "{7DC58154-471C-48CF-93A3-C0EF0AB79CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrabalhoOrientacaoObjetos01.tests", "TrabalhoOrientacaoObjetos01.tests\TrabalhoOrientacaoObjetos01.tests.csproj", "{D25B7FFB-D2D5-4FE0-94BD-1645C628F031}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DC58154-471C-48CF-93A3-C0EF0AB79CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC58154-471C-48CF-93A3-C0EF0AB79CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC58154-471C-48CF-93A3-C0EF0AB79CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC58154-471C-48CF-93A3-C0EF0AB79CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25B7FFB-D2D5-4FE0-94BD-1645C628F031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25B7FFB-D2D5-4FE0-94BD-1645C628F031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25B7FFB-D2D5-4FE0-94BD-1645C628F031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25B7FFB-D2D5-4FE0-94BD-1645C628F031}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {314EAB17-56E2-4230-AEF6-E1A7BE1F85B3}
+	EndGlobalSection
+EndGlobal
