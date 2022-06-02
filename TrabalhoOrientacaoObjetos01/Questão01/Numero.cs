@@ -9,7 +9,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
     public class Numero
     {
 
-        public double Valor;
+        //        public double Valor;
 
 
         public string ObterDecimalPorExtenso()
@@ -289,4 +289,5 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
 
+    }
 }
