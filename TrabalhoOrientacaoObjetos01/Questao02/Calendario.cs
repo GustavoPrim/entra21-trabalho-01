@@ -15,55 +15,61 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             var mesPorExtenso = "";
 
             if (Data.Month == 1)
-                return "Janeiro";
+                mesPorExtenso = "Janeiro";
 
             else if (Data.Month == 2)
-                return "Fevereiro";
+                mesPorExtenso = "Fevereiro";
 
             else if (Data.Month == 3)
-                return "Março";
+                mesPorExtenso = "Março";
 
             else if (Data.Month == 4)
-                return "Abril";
+                mesPorExtenso = "Abril";
 
             else if (Data.Month == 5)
-                return "Maio";
+                mesPorExtenso = "Maio";
 
             else if (Data.Month == 6)
-                return "Junho";
+                mesPorExtenso = "Junho";
 
             else if (Data.Month == 7)
-                return "Julho";
+                mesPorExtenso = "Julho";
 
             else if (Data.Month == 8)
-                return "Agosto";
+                mesPorExtenso = "Agosto";
 
             else if (Data.Month == 9)
-                return "Setembro";
+                mesPorExtenso = "Setembro";
 
             else if (Data.Month == 10)
-                return "Outubro";
+                mesPorExtenso = "Outubro";
 
             else if (Data.Month == 11)
-                return "Novembro";
+                mesPorExtenso = "Novembro";
 
             else if (Data.Month == 12)
-                return "Dezembro";
+                mesPorExtenso = "Dezembro";
 
-            return "";
+            return mesPorExtenso;
         }
 
-        string[] dezenas = new string[1];
+        string[] dezenas = new string[8];
+        string[] unidades = new string[9];
+        string[] milhares = new string[2];
         public string ObterDiaPorExtenso()
         {
-            dezenas[1] = "Vinte";
-            dezenas[2] = "Trinta";
-            dezenas[3] = "Quarenta";
-            dezenas[4] = "Cinquenta";
-            dezenas[5] = "Sessenta";
-            dezenas[6] = "Setenta";
-            dezenas[7] = "Oitenta";
-            dezenas[8] = "Noventa";
+            unidades[0] = " e um";
+            unidades[1] = " e dois";
+            unidades[2] = " e três";
+            unidades[3] = " e quatro";
+            unidades[4] = " e cinco";
+            unidades[5] = " e seis";
+            unidades[6] = " e sete";
+            unidades[7] = " e oito";
+            unidades[8] = " e nove";
+            dezenas[0] = "Vinte";
+            dezenas[1] = "Trinta";
+
 
             if (Data.Day == 1)
                 return "Um ";
@@ -126,14 +132,43 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                 return dezenas[1];
 
             else if (Data.Day == 21)
-                return dezenas[1] + "e um";
+                return dezenas[0] + unidades[0];
+
+            else if (Data.Day == 22)
+                return dezenas[0] + unidades[1];
+
+            else if (Data.Day == 23)
+                return dezenas[0] + unidades[2];
+
+            else if (Data.Day == 24)
+                return dezenas[0] + unidades[3];
+
+            else if (Data.Day == 25)
+                return dezenas[0] + unidades[4];
+
+            else if (Data.Day == 26)
+                return dezenas[0] + unidades[5];
+
+            else if (Data.Day == 27)
+                return dezenas[0] + unidades[6];
+
+            else if (Data.Day == 28)
+                return dezenas[0] + unidades[7];
+
+            else if (Data.Day == 29)
+                return dezenas[0] + unidades[8];
+
+            else if (Data.Day == 30)
+                return dezenas[1];
+
+            else if (Data.Day == 31)
+                return dezenas[1] + unidades[0];
 
             return "";
         }
 
         public string ObterAnoPorExtenso()
         {
-            int[] unidadeDezenas = new int[1];
             return ObterAnoPorExtenso();
         }
 

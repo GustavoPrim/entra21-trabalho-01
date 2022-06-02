@@ -29,6 +29,22 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                  .AddRow("5", "       SAIR       ");
 
             table.Write();
+            Console.WriteLine();
+
+            Console.Write("Informe a opção desejada para apresentar: ");
+            var opcaoEscolhida = Convert.ToInt32(Console.ReadLine());
+
+            if (opcaoEscolhida == 1)
+                calendario.ObterDiaPorExtenso();
+
+            else if (opcaoEscolhida == 2)
+                calendario.ObterMesPorExtenso();
+
+            else if (opcaoEscolhida == 3)
+                calendario.ObterAnoPorExtenso();
+
+            else if (opcaoEscolhida == 4)
+                calendario.ObterDataCompletaPorExtenso();
         }
     }
 }
