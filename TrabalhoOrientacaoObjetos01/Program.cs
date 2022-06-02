@@ -1,4 +1,6 @@
-﻿using TrabalhoOrientacaoObjetos01;
+﻿using TrabalhoOrientacaoObjetos01.Questão01;
+using TrabalhoOrientacaoObjetos01.Questao02;
+using TrabalhoOrientacaoObjetos01.Questao03;
 
 Console.WriteLine(@" ----------Menu----------
 1 - Exercício 01
@@ -10,8 +12,8 @@ var OpcaoDesejada = Convert.ToInt32(Console.ReadLine());
 
 if (OpcaoDesejada == 1)
 {
-    Questao01 numero = new Questao01();
-    numero.Executar();
+    //ExercicioNumero numero = new ExercicioNumero();
+    //numero.Executar();
 }
 else if (OpcaoDesejada == 2)
 {
