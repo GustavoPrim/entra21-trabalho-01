@@ -12,278 +12,368 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
         public double Valor;
 
 
-        //public string ObterDecimalPorExtenso()
-        //{
+        public string ObterDecimalPorExtenso()
+        {
 
+            if(Valor.StartsWith("."))
+            
 
 
 
 
 
 
-        //}
 
-//        public string ObterUnidadePorExtenso()
-//        {
 
-//            string[] unidadesExtenso = new string[9];
 
-//            string unidadeConvertida = "";
 
-//            for (int i = 0; i < 9; i++)
-//            {
 
-//                unidadesExtenso[1] = "Um";
-//                unidadesExtenso[2] = "Dois";
-//                unidadesExtenso[3] = "Três";
-//                unidadesExtenso[4] = "Quatro";
-//                unidadesExtenso[5] = "Cinco";
-//                unidadesExtenso[6] = "Seis";
-//                unidadesExtenso[7] = "Sete";
-//                unidadesExtenso[8] = "Oito";
-//                unidadesExtenso[9] = "Nove";
 
-//                if (Valor == 1)
-//                {
-//                    Console.WriteLine(unidadesExtenso[1]);
 
-//                }
-//                else if (Valor == 2)
-//                {
-//                    Console.WriteLine(unidadesExtenso[2]);
 
-//                }
-//                else if (Valor == 3)
-//                {
-//                    Console.WriteLine(unidadesExtenso[3]);
 
-//                }
-//                else if (Valor == 4)
-//                {
-//                    Console.WriteLine(unidadesExtenso[4]);
+        }
 
-//                }
-//                else if (Valor == 5)
-//                {
-//                    Console.WriteLine(unidadesExtenso[5]);
 
-//                }
-//                else if (Valor == 6)
-//                {
-//                    Console.WriteLine(unidadesExtenso[6]);
-//                }
-//                else if (Valor == 7)
-//                {
 
-//                    Console.WriteLine(unidadesExtenso[7]);
 
-//                }
-//                else if (Valor == 8)
-//                {
-//                    Console.WriteLine(unidadesExtenso[8]);
 
-//                }
-//                else if (Valor == 9)
-//                {
-//                    Console.WriteLine(unidadesExtenso[9]);
-//                }
 
 
-//                unidadeConvertida = unidadesExtenso[i];
 
-//            }
-//            return unidadeConvertida;
+        public string ObterUnidadePorExtenso()
+        {
 
+            string[] unidadesExtenso = new string[9];
 
+            string unidadeConvertida = "";
 
 
-//        }
+            unidadesExtenso[0] = "Um";
+            unidadesExtenso[1] = "Dois";
+            unidadesExtenso[2] = "Três";
+            unidadesExtenso[3] = "Quatro";
+            unidadesExtenso[4] = "Cinco";
+            unidadesExtenso[5] = "Seis";
+            unidadesExtenso[6] = "Sete";
+            unidadesExtenso[7] = "Oito";
+            unidadesExtenso[8] = "Nove";
 
+            if (Valor == 1)
+            {
 
-//        public string ObterDezenaPorExtenso()
-//        {
+                unidadeConvertida = unidadesExtenso[0];
 
 
+            }
+            else if (Valor == 2)
+            {
+                unidadeConvertida = unidadesExtenso[1];
 
-//            string[] dezenasExtenso = new string[9];
-//            string dezenaConvertida = "";
+            }
+            else if (Valor == 3)
+            {
+                unidadeConvertida = unidadesExtenso[2];
 
-//            for (int i = 0; i < 9; i++)
-//            {
+            }
+            else if (Valor == 4)
+            {
+                unidadeConvertida = unidadesExtenso[3];
 
-//                dezenasExtenso[1] = "Dez";
-//                dezenasExtenso[2] = "Vinte";
-//                dezenasExtenso[3] = "Trinta";
-//                dezenasExtenso[4] = "Quarenta";
-//                dezenasExtenso[5] = "Cinquenta";
-//                dezenasExtenso[6] = "Sessenta";
-//                dezenasExtenso[7] = "Setenta";
-//                dezenasExtenso[8] = "Oitenta";
-//                dezenasExtenso[9] = "Noventa";
+            }
+            else if (Valor == 5)
+            {
+                unidadeConvertida = unidadesExtenso[4];
 
-
-//                if (Valor == 10)
-//                {
-//                    Console.WriteLine(dezenasExtenso[1]);
-
-//                }
-//                else if (Valor == 20)
-//                {
-//                    Console.WriteLine(dezenasExtenso[2]);
-
-//                }
-//                else if (Valor == 30)
-//                {
-//                    Console.WriteLine(dezenasExtenso[3]);
-
-//                }
-//                else if (Valor == 40)
-//                {
-//                    Console.WriteLine(dezenasExtenso[4]);
-
-//                }
-//                else if (Valor == 50)
-//                {
-//                    Console.WriteLine(dezenasExtenso[5]);
-
-//                }
-//                else if (Valor == 60)
-//                {
-//                    Console.WriteLine(dezenasExtenso[6]);
-//                }
-//                else if (Valor == 70)
-//                {
+            }
+            else if (Valor == 6)
+            {
+                unidadeConvertida = unidadesExtenso[5];
+            }
+            else if (Valor == 7)
+            {
 
-//                    Console.WriteLine(dezenasExtenso[7]);
+                Console.WriteLine(unidadesExtenso[7]);
 
-//                }
-//                else if (Valor == 80)
-//                {
-//                    Console.WriteLine(dezenasExtenso[8]);
+            }
+            else if (Valor == 8)
+            {
+                Console.WriteLine(unidadesExtenso[8]);
 
-//                }
-//                else if (Valor == 90)
-//                {
-//                    Console.WriteLine(dezenasExtenso[9]);
-//                }
+            }
+            else if (Valor == 9)
+            {
+                Console.WriteLine(unidadesExtenso[9]);
+            }
 
-//                dezenaConvertida = dezenasExtenso[i];
+            return unidadeConvertida;
 
+        }
 
-//            }
-//            return dezenaConvertida;
 
-//        }
 
-//        public string ObterCentenaPorExtenso()
-//        {
 
 
 
 
-//            string[] CentenasExtenso = new string[9];
-//            string CentenasConvertidas = "";
 
-//            for (int i = 0; i < 9; i++)
-//            {
 
-//                CentenasExtenso[1] = "Cento";
-//                CentenasExtenso[2] = "Duzentos";
-//                CentenasExtenso[3] = "Trezentos";
-//                CentenasExtenso[4] = "Quatrocentos";
-//                CentenasExtenso[5] = "Quinhentos";
-//                CentenasExtenso[6] = "Seiscentos";
-//                CentenasExtenso[7] = "Setecentos";
-//                CentenasExtenso[8] = "Oitocentos";
-//                CentenasExtenso[9] = "Novecentos";
+        public string ObterDezenaPorExtenso()
+        {
 
 
-//                if (Valor == 100)
-//                {
-//                    Console.WriteLine(CentenasExtenso[1]);
 
-//                }
-//                else if (Valor == 200)
-//                {
-//                    Console.WriteLine(CentenasExtenso[2]);
+            string[] dezenasExtenso = new string[8];
+            string dezenaConvertida = "";
 
-//                }
-//                else if (Valor == 300)
-//                {
-//                    Console.WriteLine(CentenasExtenso[3]);
+            dezenasExtenso[0] = "Dez";
+            dezenasExtenso[1] = "Vinte";
+            dezenasExtenso[2] = "Trinta";
+            dezenasExtenso[3] = "Quarenta";
+            dezenasExtenso[4] = "Cinquenta";
+            dezenasExtenso[5] = "Sessenta";
+            dezenasExtenso[6] = "Setenta";
+            dezenasExtenso[7] = "Oitenta";
+            dezenasExtenso[8] = "Noventa";
 
-//                }
-//                else if (Valor == 400)
-//                {
-//                    Console.WriteLine(CentenasExtenso[4]);
 
-//                }
-//                else if (Valor == 500)
-//                {
-//                    Console.WriteLine(CentenasExtenso[5]);
 
-//                }
-//                else if (Valor == 600)
-//                {
-//                    Console.WriteLine(CentenasExtenso[6]);
-//                }
-//                else if (Valor == 700)
-//                {
+            if (Valor == 10)
+            {
+                dezenaConvertida = dezenasExtenso[0];
 
-//                    Console.WriteLine(CentenasExtenso[7]);
+            }
+            else if (Valor == 20)
+            {
+                Console.WriteLine(dezenasExtenso[1]);
 
-//                }
-//                else if (Valor == 800)
-//                {
-//                    Console.WriteLine(CentenasExtenso[8]);
+            }
+            else if (Valor == 30)
+            {
+                Console.WriteLine(dezenasExtenso[2]);
 
-//                }
-//                else if (Valor == 900)
-//                {
-//                    Console.WriteLine(CentenasExtenso[9]);
-//                }
+            }
+            else if (Valor == 40)
+            {
+                Console.WriteLine(dezenasExtenso[3]);
 
-//                CentenasConvertidas = CentenasExtenso[i];
+            }
+            else if (Valor == 50)
+            {
+                Console.WriteLine(dezenasExtenso[4]);
 
+            }
+            else if (Valor == 60)
+            {
+                Console.WriteLine(dezenasExtenso[5]);
+            }
+            else if (Valor == 70)
+            {
 
-//            }
-//            return CentenasConvertidas;
+                Console.WriteLine(dezenasExtenso[6]);
 
-//        }
+            }
+            else if (Valor == 80)
+            {
+                Console.WriteLine(dezenasExtenso[7]);
 
+            }
+            else if (Valor == 90)
+            {
+                Console.WriteLine(dezenasExtenso[8]);
+            }
 
 
 
-//    }
-//    public string ObterUnidadeDeMilharPorExtenso()
-//    {
+            return dezenaConvertida;
 
+        }
 
 
 
-//    }
 
-//    public int NumeroCompletoPorExtenso()
-//    {
 
 
 
 
+        public string ObterCentenaPorExtenso()
+        {
 
-}
+            string[] CentenasExtenso = new string[8];
+            string centenasConvertidas = "";
 
 
 
+            CentenasExtenso[0] = "Cem";
+            CentenasExtenso[1] = "Duzentos";
+            CentenasExtenso[2] = "Trezentos";
+            CentenasExtenso[3] = "Quatrocentos";
+            CentenasExtenso[4] = "Quinhentos";
+            CentenasExtenso[5] = "Seiscentos";
+            CentenasExtenso[6] = "Setecentos";
+            CentenasExtenso[7] = "Oitocentos";
+            CentenasExtenso[8] = "Novecentos";
 
 
+            if (Valor == 100)
+            {
 
+                centenasConvertidas = CentenasExtenso[0];
+            }
+            else if (Valor == 200)
+            {
+                centenasConvertidas = CentenasExtenso[1];
 
+            }
+            else if (Valor == 300)
+            {
+                centenasConvertidas = CentenasExtenso[2];
 
+            }
+            else if (Valor == 400)
+            {
+                centenasConvertidas = CentenasExtenso[3];
 
+            }
+            else if (Valor == 500)
+            {
+                centenasConvertidas = CentenasExtenso[4];
+            }
+            else if (Valor == 600)
+            {
+                centenasConvertidas = CentenasExtenso[5];
+            }
+            else if (Valor == 700)
+            {
 
+                centenasConvertidas = CentenasExtenso[6];
 
+            }
+            else if (Valor == 800)
+            {
+                centenasConvertidas = CentenasExtenso[7];
 
+            }
+            else if (Valor == 900)
+            {
+                centenasConvertidas = CentenasExtenso[8];
+            }
 
+            return centenasConvertidas;
 
+        }
 
-}
+
+
+
+
+
+
+
+
+
+    public string ObterUnidadeDeMilharPorExtenso()
+    {
+
+        string[] UnidadeMilharExtenso = new string[8];
+        string unidadesMilharesConvertidas = "";
+
+
+
+        UnidadeMilharExtenso[0] = "Dois Mil";
+        UnidadeMilharExtenso[1] = "Três Mil";
+        UnidadeMilharExtenso[2] = "Quatro Mil";
+        UnidadeMilharExtenso[3] = "Cinco Mil";
+        UnidadeMilharExtenso[4] = "Seis Mil";
+        UnidadeMilharExtenso[5] = "Sete Mil";
+        UnidadeMilharExtenso[6] = "Oito Mil";
+        UnidadeMilharExtenso[7] = "Nove Mil";
+        UnidadeMilharExtenso[8] = "Dez Mil";
+
+
+        if (Valor == 100)
+        {
+
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[0];
+              
+
+
+        }
+        else if (Valor == 200)
+        {
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[1];
+
+        }
+        else if (Valor == 300)
+        {
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[2];
+
+        }
+        else if (Valor == 400)
+        {
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[3];
+
+        }
+        else if (Valor == 500)
+        {
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[4];
+        } else if (Valor == 600)
+        {
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[5];
+        }
+        else if (Valor == 700)
+        {
+
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[6];
+
+        }
+        else if (Valor == 800)
+        {
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[7];
+
+        }
+        else if (Valor == 900)
+        {
+            unidadesMilharesConvertidas = UnidadeMilharExtenso[8];
+
+        }
+
+
+
+
+        Console.WriteLine(unidadesMilharesConvertidas);
+        return unidadesMilharesConvertidas;
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    public string NumeroCompletoPorExtenso() { 
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+
+
+
+
+    }
+
+    
+
+          
