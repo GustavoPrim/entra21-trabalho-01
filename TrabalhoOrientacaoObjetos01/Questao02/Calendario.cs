@@ -50,12 +50,14 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Month == 12)
                 mesPorExtenso = "Dezembro";
 
+            Console.WriteLine(mesPorExtenso);
             return mesPorExtenso;
         }
 
         string[] dezenas = new string[8];
         string[] unidades = new string[9];
-        string[] milhares = new string[2];
+        string[] milharesComCentenas = new string[4];
+
         public string ObterDiaPorExtenso()
         {
             unidades[0] = " e um";
@@ -71,105 +73,158 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             dezenas[1] = "Trinta";
 
 
+            var diaPorExtenso = "";
             if (Data.Day == 1)
-                return "Um ";
+                diaPorExtenso = "Um ";
 
             else if (Data.Day == 2)
-                return "Dois ";
+                diaPorExtenso = "Dois ";
 
             else if (Data.Day == 3)
-                return "Três ";
+                diaPorExtenso = "Três ";
 
             else if (Data.Day == 4)
-                return "Quatro ";
+                diaPorExtenso = "Quatro ";
 
             else if (Data.Day == 5)
-                return "Cinco ";
+                diaPorExtenso = "Cinco ";
 
             else if (Data.Day == 6)
-                return "Seis ";
+                diaPorExtenso = "Seis ";
 
             else if (Data.Day == 7)
-                return "Sete ";
+                diaPorExtenso = "Sete ";
 
             else if (Data.Day == 8)
-                return "Oito ";
+                diaPorExtenso = "Oito ";
 
             else if (Data.Day == 9)
-                return "Nove ";
+                diaPorExtenso = "Nove ";
 
             else if (Data.Day == 10)
-                return "Dez";
+                diaPorExtenso = "Dez";
 
             else if (Data.Day == 11)
-                return "Onze";
+                diaPorExtenso = "Onze";
 
             else if (Data.Day == 12)
-                return "Doze";
+                diaPorExtenso = "Doze";
 
             else if (Data.Day == 13)
-                return "Treze";
+                diaPorExtenso = "Treze";
 
             else if (Data.Day == 14)
-                return "Quatorze";
+                diaPorExtenso = "Quatorze";
 
             else if (Data.Day == 15)
-                return "Quinze";
+                diaPorExtenso = "Quinze";
 
             else if (Data.Day == 16)
-                return "Dezesseis";
+                diaPorExtenso = "Dezesseis";
 
             else if (Data.Day == 17)
-                return "Dezessete";
+                diaPorExtenso = "Dezessete";
 
             else if (Data.Day == 18)
-                return "Dezoito";
+                diaPorExtenso = "Dezoito";
 
             else if (Data.Day == 19)
-                return "Dezenove";
+                diaPorExtenso = "Dezenove";
 
             else if (Data.Day == 20)
-                return dezenas[1];
+                diaPorExtenso = dezenas[1];
 
             else if (Data.Day == 21)
-                return dezenas[0] + unidades[0];
+                diaPorExtenso = dezenas[0] + unidades[0];
 
             else if (Data.Day == 22)
-                return dezenas[0] + unidades[1];
+                diaPorExtenso = dezenas[0] + unidades[1];
 
             else if (Data.Day == 23)
-                return dezenas[0] + unidades[2];
+                diaPorExtenso = dezenas[0] + unidades[2];
 
             else if (Data.Day == 24)
-                return dezenas[0] + unidades[3];
+                diaPorExtenso = dezenas[0] + unidades[3];
 
             else if (Data.Day == 25)
-                return dezenas[0] + unidades[4];
+                diaPorExtenso = dezenas[0] + unidades[4];
 
             else if (Data.Day == 26)
-                return dezenas[0] + unidades[5];
+                diaPorExtenso = dezenas[0] + unidades[5];
 
             else if (Data.Day == 27)
-                return dezenas[0] + unidades[6];
+                diaPorExtenso = dezenas[0] + unidades[6];
 
             else if (Data.Day == 28)
-                return dezenas[0] + unidades[7];
+                diaPorExtenso = dezenas[0] + unidades[7];
 
             else if (Data.Day == 29)
-                return dezenas[0] + unidades[8];
+                diaPorExtenso = dezenas[0] + unidades[8];
 
             else if (Data.Day == 30)
-                return dezenas[1];
+                diaPorExtenso = dezenas[1];
 
             else if (Data.Day == 31)
-                return dezenas[1] + unidades[0];
+                diaPorExtenso = dezenas[1] + unidades[0];
 
-            return "";
+            Console.WriteLine(diaPorExtenso);
+            return diaPorExtenso;
         }
 
         public string ObterAnoPorExtenso()
         {
-            return ObterAnoPorExtenso();
+            milharesComCentenas[0] = "Mil novecentos e setenta";
+            milharesComCentenas[1] = "Mil novecentos e oitenta";
+            milharesComCentenas[2] = "Mil novecentos e noventa";
+            milharesComCentenas[3] = "Dois mil";
+            dezenas[2] = " setenta";
+            dezenas[3] = " oitenta";
+            dezenas[4] = " noventa";
+
+            var anoPorExtenso = "";
+            if (Data.Year == 1970)
+                anoPorExtenso = milharesComCentenas[0];
+
+            else if (Data.Year == 1971)
+                anoPorExtenso = milharesComCentenas[0] + unidades[0];
+
+            else if (Data.Year == 1972)
+                anoPorExtenso = milharesComCentenas[0] + unidades[1];
+
+            else if (Data.Year == 1973)
+                anoPorExtenso = milharesComCentenas[0] + unidades[2];
+
+            else if (Data.Year == 1974)
+                anoPorExtenso = milharesComCentenas[0] + unidades[3];
+
+            else if (Data.Year == 1975)
+                anoPorExtenso = milharesComCentenas[0] + unidades[4];
+
+            else if (Data.Year == 1976)
+                anoPorExtenso = milharesComCentenas[0] + unidades[5];
+
+            else if (Data.Year == 1977)
+                anoPorExtenso = milharesComCentenas[0] + unidades[6];
+
+            else if (Data.Year == 1978)
+                anoPorExtenso = milharesComCentenas[0] + unidades[7];
+
+            else if (Data.Year == 1979)
+                anoPorExtenso = milharesComCentenas[0] + unidades[8];
+
+            else if (Data.Year == 1980)
+                anoPorExtenso =
+
+            else if (Data.Year == 1981)
+                anoPorExtenso =
+
+            else if (Data.Year == 1982)
+                anoPorExtenso =
+
+            else if (Data.Year == 1983)
+                anoPorExtenso =
+
+            else if (Data.Year == 1983)
         }
 
         public string ObterDataCompletaPorExtenso()
