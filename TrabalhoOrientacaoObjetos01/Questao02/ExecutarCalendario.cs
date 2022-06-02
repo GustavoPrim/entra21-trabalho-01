@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleTables;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,8 +17,25 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             calendario.Data = Convert.ToDateTime(Console.ReadLine());
 
             Console.Clear();
+
+            var table = new ConsoleTable("Código", "Opção");
+
+            table.Configure(x => x.EnableCount = false);
+
+            table.AddRow("1", "Dia por extenso")
+                 .AddRow("2", "Mês por extenso")
+                 .AddRow("3", "Ano por extenso")
+                 .AddRow("4", "Data completa por extenso")
+                 .AddRow("5", "       SAIR       ");
+
+            table.Write();
+
+            Console.WriteLine("Informe a opção desejada para ser informada: ");
+            var opcaoDesejada = Convert.ToInt32(Console.ReadLine());
+
             
-            Console.WriteLine($"Mês informado digitado por extenso: {calendario.ObterMesPorExtenso()}");
+            
+            
         }
     }
 }

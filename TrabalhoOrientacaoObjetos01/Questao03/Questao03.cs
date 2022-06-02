@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Questao03
 {
-    internal class Questao03
+    public class Questao03
     {
+        public void Executar()
+        {
+
+        }
     }
 }
