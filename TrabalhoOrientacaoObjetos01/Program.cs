@@ -22,6 +22,9 @@ else if (OpcaoDesejada == 2)
 }
 else if (OpcaoDesejada == 3)
 {
-    //ExecutarRelogio relogio = new ExecutarRelogio();
-    //relogio.Executar();
+    ExecutarRelogio relogio = new ExecutarRelogio;
+    relogio.Executar();
 }
+
+
+

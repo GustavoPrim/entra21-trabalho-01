@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Questao03
 {
-    internal class Questao03
+    internal class ExecutarRelogio
     {
+        public void Executar()
+        {
+
+        }
+
     }
 }
