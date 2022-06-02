@@ -10,7 +10,7 @@ var OpcaoDesejada = Convert.ToInt32(Console.ReadLine());
 
 if (OpcaoDesejada == 1)
 {
-    ExercicioNumero numero = new ExercicioNumero();
+    Questao01 numero = new Questao01();
     numero.Executar();
 }
 else if (OpcaoDesejada == 2)
@@ -23,3 +23,6 @@ else if (OpcaoDesejada == 3)
     ExecutarRelogio relogio = new ExecutarRelogio;
     relogio.Executar();
 }
+
+
+

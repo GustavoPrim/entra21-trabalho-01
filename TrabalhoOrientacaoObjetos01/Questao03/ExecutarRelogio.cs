@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrabalhoOrientacaoObjetos01.Questao04
+namespace TrabalhoOrientacaoObjetos01.Questao03
 {
-    internal class Questao04
+    internal class ExecutarRelogio
     {
+        public void Executar()
+        {
+
+        }
+
     }
 }
