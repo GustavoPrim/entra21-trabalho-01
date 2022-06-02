@@ -11,12 +11,12 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
         public void Executar()
         {
 
-            //Numero numero = new Numero();
+            Numero numero = new Numero();
 
-            //Console.WriteLine("Informe um valor: ");
-            //numero.Valor = Convert.ToDouble(Console.ReadLine().ToString());
+            Console.WriteLine("Informe um valor: ");
+            numero.Valor = Convert.ToDouble(Console.ReadLine().ToString());
 
-
+            
 
 
         }
