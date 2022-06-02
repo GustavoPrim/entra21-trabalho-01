@@ -53,56 +53,95 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             return "";
         }
 
+        string[] dezenas = new string[1];
         public string ObterDiaPorExtenso()
         {
-            //(18)
-            var dia = Convert.ToString(Data.Day);
+            dezenas[1] = "Vinte";
+            dezenas[2] = "Trinta";
+            dezenas[3] = "Quarenta";
+            dezenas[4] = "Cinquenta";
+            dezenas[5] = "Sessenta";
+            dezenas[6] = "Setenta";
+            dezenas[7] = "Oitenta";
+            dezenas[8] = "Noventa";
 
             if (Data.Day == 1)
-                return "Um de";
+                return "Um ";
 
             else if (Data.Day == 2)
-                return "Dois de";
+                return "Dois ";
 
             else if (Data.Day == 3)
-                return "Três de";
+                return "Três ";
 
             else if (Data.Day == 4)
-                return "Quatro de";
+                return "Quatro ";
 
             else if (Data.Day == 5)
-                return "Cinco de";
+                return "Cinco ";
 
             else if (Data.Day == 6)
-                return "Seis de";
+                return "Seis ";
 
             else if (Data.Day == 7)
-                return "Sete de";
+                return "Sete ";
 
             else if (Data.Day == 8)
-                return "Oito de";
+                return "Oito ";
 
             else if (Data.Day == 9)
-                return "Nove de";
+                return "Nove ";
+
+            else if (Data.Day == 10)
+                return "Dez";
+
+            else if (Data.Day == 11)
+                return "Onze";
+
+            else if (Data.Day == 12)
+                return "Doze";
+
+            else if (Data.Day == 13)
+                return "Treze";
+
+            else if (Data.Day == 14)
+                return "Quatorze";
+
+            else if (Data.Day == 15)
+                return "Quinze";
+
+            else if (Data.Day == 16)
+                return "Dezesseis";
+
+            else if (Data.Day == 17)
+                return "Dezessete";
+
+            else if (Data.Day == 18)
+                return "Dezoito";
+
+            else if (Data.Day == 19)
+                return "Dezenove";
+
+            else if (Data.Day == 20)
+                return dezenas[1];
+
+            else if (Data.Day == 21)
+                return dezenas[1] + "e um";
 
             return "";
         }
 
-        //public string ObterAnoPorExtenso()
-        //{
+        public string ObterAnoPorExtenso()
+        {
+            int[] unidadeDezenas = new int[1];
+            return ObterAnoPorExtenso();
+        }
 
-        //}
-
-        //public string ApresentarInformacoes()
-        //{
-        //    if (OpcaoDesejada == 1)
-        //        return ObterDiaPorExtenso();
-
-        //    else if (OpcaoDesejada == 2)
-        //        return ObterMesPorExtenso();
-
-        //    else if (OpcaoDesejada == 3)
-        //        //return ObterAnoPorExtenso();
+        public string ObterDataCompletaPorExtenso()
+        {
+            var dataCompletaPorExtenso = ObterDiaPorExtenso() + " de " + ObterMesPorExtenso() + " de " + ObterAnoPorExtenso();
+            return dataCompletaPorExtenso;
+        }
     }
 }
 

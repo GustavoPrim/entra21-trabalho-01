@@ -54,52 +54,24 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 return "doze";
 
             else if (relogio.Hour == 13)
-                return "uma horas";
+                return "uma hora";
 
             else if (relogio.Hour == 14)
-                return "duas horas";
-
-            else if (relogio.Hour == 15)
-                return "três horas";
-
-            else if (relogio.Hour == 16)
-                return "quatro horas";
-
-            else if (relogio.Hour == 17)
-                return "cinco horas";
-
-            else if (relogio.Hour == 18)
-                return "seis horas";
-
-            else if (relogio.Hour == 19)
-                return "sete horas";
-
-            else if (relogio.Hour == 20)
-                return "oito horas";
-
-            else if (relogio.Hour == 21)
-                return "nove horas";
-
-            else if (relogio.Hour == 22)
-                return "dez horas";
-
-            else if (relogio.Hour == 23)
-                return "onze horas";
-
-
+                return "quatorze";
 
             
         }
 
-        //public string ObterPorExtenso()
-        //{
-        //    return numero;
-        //}
+        public string ObterPorExtenso()
+        {
+            return ObterPorExtenso();
+        }
 
-        //public string ObterMinutosPorExtenso()
-        //{
-        //    var resposta = ObterPorExtenso();
-        //}
+        public string ObterMinutosPorExtenso()
+        {
+            var resposta = ObterPorExtenso();
+            return resposta;
+        }
 
 
 

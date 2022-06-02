@@ -29,13 +29,6 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                  .AddRow("5", "       SAIR       ");
 
             table.Write();
-
-            Console.WriteLine("Informe a opção desejada para ser informada: ");
-            var opcaoDesejada = Convert.ToInt32(Console.ReadLine());
-
-            
-            
-            
         }
     }
 }
