@@ -187,7 +187,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 //            for (int i = 0; i < 9; i++)
 //            {
 
-//                CentenasExtenso[1] = "Cem";
+//                CentenasExtenso[1] = "Cento";
 //                CentenasExtenso[2] = "Duzentos";
 //                CentenasExtenso[3] = "Trezentos";
 //                CentenasExtenso[4] = "Quatrocentos";
