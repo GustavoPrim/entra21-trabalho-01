@@ -56,7 +56,6 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
 
         string[] dezenas = new string[8];
         string[] unidades = new string[9];
-        string[] milharesComCentenas = new string[4];
 
         public string ObterDiaPorExtenso()
         {
@@ -171,65 +170,77 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             return diaPorExtenso;
         }
 
+
         public string ObterAnoPorExtenso()
         {
-            milharesComCentenas[0] = "Mil novecentos e setenta";
-            milharesComCentenas[1] = "Mil novecentos e oitenta";
-            milharesComCentenas[2] = "Mil novecentos e noventa";
-            milharesComCentenas[3] = "Dois mil";
-            dezenas[2] = " setenta";
-            dezenas[3] = " oitenta";
-            dezenas[4] = " noventa";
+            var ano = 2030;
+            var anoNomesExtenso = "";
 
-            var anoPorExtenso = "";
-            if (Data.Year == 1970)
-                anoPorExtenso = milharesComCentenas[0];
+            if (Data.Year == ano)
+                anoNomesExtenso = "Dois mil e trinta";
 
-            else if (Data.Year == 1971)
-                anoPorExtenso = milharesComCentenas[0] + unidades[0];
+            else if (Data.Year == ano - 1)
+                anoNomesExtenso = "Dois mil e vinte e nove";
 
-            else if (Data.Year == 1972)
-                anoPorExtenso = milharesComCentenas[0] + unidades[1];
+            else if (Data.Year == ano - 2)
+                anoNomesExtenso = "Dois mil e vinte e oito";
 
-            else if (Data.Year == 1973)
-                anoPorExtenso = milharesComCentenas[0] + unidades[2];
+            else if (Data.Year == ano - 3)
+                anoNomesExtenso = "Dois mil e vinte e sete";
 
-            else if (Data.Year == 1974)
-                anoPorExtenso = milharesComCentenas[0] + unidades[3];
+            else if (Data.Year == ano - 4)
+                anoNomesExtenso = "Dois mil e vinte e seis";
 
-            else if (Data.Year == 1975)
-                anoPorExtenso = milharesComCentenas[0] + unidades[4];
+            else if (Data.Year == ano - 5)
+                anoNomesExtenso = "Dois mil e vinte e cinco";
 
-            else if (Data.Year == 1976)
-                anoPorExtenso = milharesComCentenas[0] + unidades[5];
+            else if (Data.Year == ano - 6)
+                anoNomesExtenso = "Dois mil e vinte e quatro";
 
-            else if (Data.Year == 1977)
-                anoPorExtenso = milharesComCentenas[0] + unidades[6];
+            else if (Data.Year == ano - 7)
+                anoNomesExtenso = "Dois mil e vinte e três";
 
-            else if (Data.Year == 1978)
-                anoPorExtenso = milharesComCentenas[0] + unidades[7];
+            else if (Data.Year == ano - 8)
+                anoNomesExtenso = "Dois mil e vinte e dois";
 
-            else if (Data.Year == 1979)
-                anoPorExtenso = milharesComCentenas[0] + unidades[8];
+            else if (Data.Year == ano - 9)
+                anoNomesExtenso = "Dois mil e vinte e um";
 
-            else if (Data.Year == 1980)
-                anoPorExtenso =
+            else if (Data.Year == ano - 10)
+                anoNomesExtenso = "Dois mil e vinte";
 
-            else if (Data.Year == 1981)
-                anoPorExtenso =
+            else if (Data.Year == ano - 11)
+                anoNomesExtenso = "Dois mil e dezenove";
 
-            else if (Data.Year == 1982)
-                anoPorExtenso =
+            else if (Data.Year == ano - 12)
+                anoNomesExtenso = "Dois mil e dezoito";
 
-            else if (Data.Year == 1983)
-                anoPorExtenso =
+            else if (Data.Year == ano - 13)
+                anoNomesExtenso = "Dois mil e dezessete";
 
-            else if (Data.Year == 1983)
+            else if (Data.Year == ano - 14)
+                anoNomesExtenso = "Dois mil e dezesseis";
+
+            else if (Data.Year == ano - 15)
+                anoNomesExtenso = "Dois mil e quinze";
+
+            else if (Data.Year == ano - 16)
+                anoNomesExtenso = "Dois mil e quatorze";
+
+            else if (Data.Year == ano - 17)
+                anoNomesExtenso = "Dois mil e treze";
+
+
+
+Console.WriteLine(anoNomesExtenso);
+            return anoNomesExtenso;
         }
 
         public string ObterDataCompletaPorExtenso()
         {
             var dataCompletaPorExtenso = ObterDiaPorExtenso() + " de " + ObterMesPorExtenso() + " de " + ObterAnoPorExtenso();
+            Console.Clear();
+            Console.WriteLine(dataCompletaPorExtenso);
             return dataCompletaPorExtenso;
         }
     }
