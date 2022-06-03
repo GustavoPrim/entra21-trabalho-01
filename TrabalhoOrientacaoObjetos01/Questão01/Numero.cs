@@ -256,16 +256,6 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             return centenasConvertidas;
 
         }
-
-
-
-
-
-
-
-
-
-
     public string ObterUnidadeDeMilharPorExtenso()
     {
 
@@ -338,27 +328,11 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
         Console.WriteLine(unidadesMilharesConvertidas);
         return unidadesMilharesConvertidas;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
     public string NumeroCompletoPorExtenso()
     {
 
-        var resposta = "";
-
-        Console.WriteLine("O numero completo é: " + ObterUnidadeDeMilharPorExtenso() + ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso() + "," +ObterDecimalPorExtenso() );
-
-            resposta = Console.ReadLine();
+        
+      var resposta = "O numero completo é: " + ObterUnidadeDeMilharPorExtenso() + ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso() + "," +ObterDecimalPorExtenso();
 
 
             return resposta;
