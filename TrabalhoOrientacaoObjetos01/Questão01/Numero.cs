@@ -17,7 +17,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             int numeroPositivo = 0;
             var numeroDecimalExtenso = "";
 
-            if (Valor * 100 > numeroPositivo) 
+            if (Valor * 100 > numeroPositivo)
             {
 
                 numeroDecimalExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
@@ -259,68 +259,69 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
     public string ObterUnidadeDeMilharPorExtenso()
     {
 
-        string[] UnidadeMilharExtenso = new string[8];
-        string unidadesMilharesConvertidas = "";
+            string[] UnidadeMilharExtenso = new string[8];
+            string unidadesMilharesConvertidas = "";
 
 
 
-        UnidadeMilharExtenso[0] = "Dois Mil";
-        UnidadeMilharExtenso[1] = "Três Mil";
-        UnidadeMilharExtenso[2] = "Quatro Mil";
-        UnidadeMilharExtenso[3] = "Cinco Mil";
-        UnidadeMilharExtenso[4] = "Seis Mil";
-        UnidadeMilharExtenso[5] = "Sete Mil";
-        UnidadeMilharExtenso[6] = "Oito Mil";
-        UnidadeMilharExtenso[7] = "Nove Mil";
-        UnidadeMilharExtenso[8] = "Dez Mil";
+            UnidadeMilharExtenso[0] = "Dois Mil";
+            UnidadeMilharExtenso[1] = "Três Mil";
+            UnidadeMilharExtenso[2] = "Quatro Mil";
+            UnidadeMilharExtenso[3] = "Cinco Mil";
+            UnidadeMilharExtenso[4] = "Seis Mil";
+            UnidadeMilharExtenso[5] = "Sete Mil";
+            UnidadeMilharExtenso[6] = "Oito Mil";
+            UnidadeMilharExtenso[7] = "Nove Mil";
+            UnidadeMilharExtenso[8] = "Dez Mil";
 
 
-        if (Valor == 100)
-        {
+            if (Valor == 100)
+            {
 
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[0];
-              
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[0];
 
 
-        }
-        else if (Valor == 200)
-        {
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[1];
 
-        }
-        else if (Valor == 300)
-        {
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[2];
+            }
+            else if (Valor == 200)
+            {
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[1];
 
-        }
-        else if (Valor == 400)
-        {
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[3];
+            }
+            else if (Valor == 300)
+            {
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[2];
 
-        }
-        else if (Valor == 500)
-        {
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[4];
-        } else if (Valor == 600)
-        {
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[5];
-        }
-        else if (Valor == 700)
-        {
+            }
+            else if (Valor == 400)
+            {
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[3];
 
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[6];
+            }
+            else if (Valor == 500)
+            {
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[4];
+            }
+            else if (Valor == 600)
+            {
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[5];
+            }
+            else if (Valor == 700)
+            {
 
-        }
-        else if (Valor == 800)
-        {
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[7];
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[6];
 
-        }
-        else if (Valor == 900)
-        {
-            unidadesMilharesConvertidas = UnidadeMilharExtenso[8];
+            }
+            else if (Valor == 800)
+            {
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[7];
 
-        }
+            }
+            else if (Valor == 900)
+            {
+                unidadesMilharesConvertidas = UnidadeMilharExtenso[8];
+
+            }
 
 
 
@@ -344,6 +345,4 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 }
 
-    
-
-          
+      

@@ -9,86 +9,87 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
     public class Relogio
     {
 
-        public DateTime relogio;
+        public DateTime Hora;
         public int numeroParaConverter;
 
         public string ObterHoraPorExtenso()
         {
-            return relogio.Hour.ToString();
+            return Hora.Hour.ToString();
 
 
-            if (relogio.Hour == 01)
+            if (Hora.Hour == 01)
                 return "uma hora";
 
-            else if (relogio.Hour == 02)
+            else if (Hora.Hour == 02)
                 return "duas";
 
-            else if (relogio.Hour == 03)
+            else if (Hora.Hour == 03)
                 return "três";
 
-            else if (relogio.Hour == 04)
+            else if (Hora.Hour == 04)
                 return "quatro";
 
-            else if (relogio.Hour == 05)
+            else if (Hora.Hour == 05)
                 return "cinco";
 
-            else if (relogio.Hour == 06)
+            else if (Hora.Hour == 06)
                 return "seis";
 
-            else if (relogio.Hour == 07)
+            else if (Hora.Hour == 07)
                 return "sete";
 
-            else if (relogio.Hour == 08)
+            else if (Hora.Hour == 08)
                 return "oito";
 
-            else if (relogio.Hour == 09)
+            else if (Hora.Hour == 09)
                 return "nove";
 
-            else if (relogio.Hour == 10)
+            else if (Hora.Hour == 10)
                 return "dez";
 
-            else if (relogio.Hour == 11)
+            else if (Hora.Hour == 11)
                 return "onze";
 
-            else if (relogio.Hour == 12)
+            else if (Hora.Hour == 12)
                 return "doze";
 
-            else if (relogio.Hour == 13)
+            else if (Hora.Hour == 13)
                 return "uma hora";
 
-            else if (relogio.Hour == 14)
+            else if (Hora.Hour == 14)
                 return "duas";
 
-            else if (relogio.Hour == 15)
+            else if (Hora.Hour == 15)
                 return "três";
 
-            else if (relogio.Hour == 16)
+            else if (Hora.Hour == 16)
                 return "quatro";
 
-            else if (relogio.Hour == 17)
+            else if (Hora.Hour == 17)
                 return "cinco";
 
-            else if (relogio.Hour == 18)
+            else if (Hora.Hour == 18)
                 return "seis";
 
-            else if (relogio.Hour == 19)
+            else if (Hora.Hour == 19)
                 return "sete";
 
-            else if (relogio.Hour == 20)
+            else if (Hora.Hour == 20)
                 return "oito";
 
-            else if (relogio.Hour == 21)
+            else if (Hora.Hour == 21)
                 return "nove";
 
-            else if (relogio.Hour == 22)
+            else if (Hora.Hour == 22)
                 return "dez";
 
-            else if (relogio.Hour == 23)
+            else if (Hora.Hour == 23)
                 return "onze";
 
-            else if (relogio.Hour == 00)
+            else if (Hora.Hour == 00)
                 return "meia noite";
 
+            Console.WriteLine(ObterHoraPorExtenso);
         }
 
         public string ObterSegundoExtenso()
@@ -272,7 +273,9 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             else if (valorExt == 59)
                 return "cinquenta e nove";
 
-            var resposta = ObterSegundoExtenso + "segundos";
+            var resposta = valorExt + "segundos";
+
+            return resposta;
 
         }
 
@@ -457,10 +460,18 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             else if (valorExt == 59)
                 return "cinquenta e nove";
 
-            var resposta = ObterHoraPorExtenso + "minutos";
+            var resposta = valorExt + "minutos";
+            return resposta;
         }
 
+        public string ObterHoraCompleta()
+        {
+            var resposta = "";
+            Console.WriteLine("A hora completa é: " + ObterHoraPorExtenso + ":" +  ObterMinutosPorExtenso + ":" + ObterSegundoExtenso);
+            resposta = Console.ReadLine();
 
+            return resposta.Trim();
+        }
 
 
     }
