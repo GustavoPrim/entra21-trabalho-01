@@ -14,23 +14,17 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         public string ObterDecimalPorExtenso()
         {
+            int numeroPositivo = 0;
+            var numeroDecimalExtenso = "";
 
-            if(Valor.StartsWith("."))
-            
+            if (Valor * 100 > numeroPositivo) 
+            {
 
+                numeroDecimalExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
 
+            }
 
-
-
-
-
-
-
-
-
-
-
-
+            return numeroDecimalExtenso;
 
         }
 
