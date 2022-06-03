@@ -50,6 +50,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Month == 12)
                 mesPorExtenso = "Dezembro";
 
+            Console.Clear();
             Console.WriteLine(mesPorExtenso);
             return mesPorExtenso;
         }
@@ -166,6 +167,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Day == 31)
                 diaPorExtenso = dezenas[1] + unidades[0];
 
+            Console.Clear();
             Console.WriteLine(diaPorExtenso);
             return diaPorExtenso;
         }
@@ -230,9 +232,137 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Year == ano - 17)
                 anoNomesExtenso = "Dois mil e treze";
 
+            else if (Data.Year == ano - 18)
+                anoNomesExtenso = "Dois mil e doze";
 
+            else if (Data.Year == ano - 19)
+                anoNomesExtenso = "Dois mil e onze";
 
-Console.WriteLine(anoNomesExtenso);
+            else if (Data.Year == ano - 20)
+                anoNomesExtenso = "Dois mil e dez";
+
+            else if (Data.Year == ano - 21)
+                anoNomesExtenso = "Dois mil e nove";
+
+            else if (Data.Year == ano - 22)
+                anoNomesExtenso = "Dois mil e oito";
+
+            else if (Data.Year == ano - 23)
+                anoNomesExtenso = "Dois mil e sete";
+
+            else if (Data.Year == ano - 24)
+                anoNomesExtenso = "Dois mil e seis";
+
+            else if (Data.Year == ano - 25)
+                anoNomesExtenso = "Dois mil e cinco";
+
+            else if (Data.Year == ano - 26)
+                anoNomesExtenso = "Dois mil e quatro";
+
+            else if (Data.Year == ano - 27)
+                anoNomesExtenso = "Dois mil e três";
+
+            else if (Data.Year == ano - 28)
+                anoNomesExtenso = "Dois mil e dois";
+
+            else if (Data.Year == ano - 29)
+                anoNomesExtenso = "Dois mil e um";
+
+            else if (Data.Year == ano - 30)
+                anoNomesExtenso = "Dois mil";
+
+            else if (Data.Year == ano - 31)
+                anoNomesExtenso = "Mil novecentos e noventa e nove";
+
+            else if (Data.Year == ano - 32)
+                anoNomesExtenso = "Mil novecentos e noventa e oito";
+
+            else if (Data.Year == ano - 33)
+                anoNomesExtenso = "Mil novecentos e noventa e sete";
+
+            else if (Data.Year == ano - 34)
+                anoNomesExtenso = "Mil novecentos e noventa e seis";
+
+            else if (Data.Year == ano - 35)
+                anoNomesExtenso = "Mil novecentos e noventa e cinco";
+
+            else if (Data.Year == ano - 36)
+                anoNomesExtenso = "Mil novecentos e noventa e quatro";
+
+            else if (Data.Year == ano - 37)
+                anoNomesExtenso = "Mil novecentos e noventa e três";
+
+            else if (Data.Year == ano - 38)
+                anoNomesExtenso = "Mil novecentos e noventa e dois";
+
+            else if (Data.Year == ano - 39)
+                anoNomesExtenso = "Mil novecentos e noventa e um";
+
+            else if (Data.Year == ano - 40)
+                anoNomesExtenso = "Mil novecentos e noventa";
+
+            else if (Data.Year == ano - 41)
+                anoNomesExtenso = "Mil novecentos e oitenta e nove";
+
+            else if (Data.Year == ano - 42)
+                anoNomesExtenso = "Mil novecentos e oitenta e oito";
+
+            else if (Data.Year == ano - 43)
+                anoNomesExtenso = "Mil novecentos e oitenta e sete";
+
+            else if (Data.Year == ano - 44)
+                anoNomesExtenso = "Mil novecentos e oitenta e seis";
+
+            else if (Data.Year == ano - 45)
+                anoNomesExtenso = "Mil novecentos e oitenta e cinco";
+
+            else if (Data.Year == ano - 46)
+                anoNomesExtenso = "Mil novecentos e oitenta e quatro";
+
+            else if (Data.Year == ano - 47)
+                anoNomesExtenso = "Mil novecentos e oitenta e três";
+
+            else if (Data.Year == ano - 48)
+                anoNomesExtenso = "Mil novecentos e oitenta e dois";
+
+            else if (Data.Year == ano - 49)
+                anoNomesExtenso = "Mil novecentos e oitenta e um";
+
+            else if (Data.Year == ano - 50)
+                anoNomesExtenso = "Mil novecentos e oitenta";
+
+            else if (Data.Year == ano - 51)
+                anoNomesExtenso = "Mil novecentos e setenta e nove";
+
+            else if (Data.Year == ano - 52)
+                anoNomesExtenso = "Mil novecentos e setenta e oito";
+
+            else if (Data.Year == ano - 53)
+                anoNomesExtenso = "Mil novecentos e setenta e sete";
+
+            else if (Data.Year == ano - 54)
+                anoNomesExtenso = "Mil novecentos e setenta e seis";
+
+            else if (Data.Year == ano - 55)
+                anoNomesExtenso = "Mil novecentos e setenta e cinco";
+
+            else if (Data.Year == ano - 56)
+                anoNomesExtenso = "Mil novecentos e setenta e quatro";
+
+            else if (Data.Year == ano - 57)
+                anoNomesExtenso = "Mil novecentos e setenta e três";
+
+            else if (Data.Year == ano - 58)
+                anoNomesExtenso = "Mil novecentos e setenta e dois";
+
+            else if (Data.Year == ano - 59)
+                anoNomesExtenso = "Mil novecentos e setenta e um";
+
+            else if (Data.Year == ano - 60)
+                anoNomesExtenso = "Mil novecentos e setenta";
+
+            Console.Clear();
+            Console.WriteLine(anoNomesExtenso);
             return anoNomesExtenso;
         }
 
