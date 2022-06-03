@@ -18,7 +18,7 @@ namespace TrabalhoOrientacaoObjetos01.tests
         {
 
             //Arrange
-            relogio.relogio = DateTime.Now;
+            relogio.Hora = DateTime.Now;
             var resposta = relogio.ObterHoraPorExtenso();
             resposta.Should().Be("Vinte e quatro horas");
 
