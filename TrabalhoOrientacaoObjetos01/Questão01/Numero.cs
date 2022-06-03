@@ -336,10 +336,39 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
 
-            Console.WriteLine(unidadesMilharesConvertidas);
-            return unidadesMilharesConvertidas;
-        }
+        Console.WriteLine(unidadesMilharesConvertidas);
+        return unidadesMilharesConvertidas;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public string NumeroCompletoPorExtenso()
+    {
+
+        var resposta = "";
+
+        Console.WriteLine("O numero completo é: " + ObterUnidadeDeMilharPorExtenso() + ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso() + "," +ObterDecimalPorExtenso() );
+
+            resposta = Console.ReadLine();
+
+
+            return resposta;
+    }
+
+
+
+    }
+
 }
 
       
