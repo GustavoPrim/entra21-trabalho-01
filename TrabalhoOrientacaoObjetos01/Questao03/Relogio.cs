@@ -97,7 +97,10 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
         public string ObterMinutosPorExtenso()
         {
             var minutoDigitado = "";
-            
+            var minutoZero = "";
+
+            if (Hora.Minute == 0)
+                return minutoZero;
 
             if (Hora.Minute == 01)
                 minutoDigitado = "um";
@@ -287,6 +290,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
         {
             
             var segundoDigitado = "";
+            var segundoZero = "";
 
             if (Hora.Second == 01)
                 segundoDigitado = "um";
@@ -406,7 +410,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 segundoDigitado = "trinta e nove";
 
             else if (Hora.Second == 40)
-                 segundoDigitado = "quarenta";
+                segundoDigitado = "quarenta";
 
             else if (Hora.Second == 41)
                 segundoDigitado = "quarenta e um";
@@ -415,55 +419,59 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 segundoDigitado = "quarenta e dois";
 
             else if (Hora.Second == 43)
-                 segundoDigitado = "quarenta e três";
+                segundoDigitado = "quarenta e três";
 
             else if (Hora.Second == 44)
-                 segundoDigitado = "quarenta e quatro";
+                segundoDigitado = "quarenta e quatro";
 
             else if (Hora.Second == 45)
-                 segundoDigitado = "quarenta e cinco";
+                segundoDigitado = "quarenta e cinco";
 
             else if (Hora.Second == 46)
-                 segundoDigitado = "quarenta e seis";
+                segundoDigitado = "quarenta e seis";
 
             else if (Hora.Second == 47)
-                 segundoDigitado = "quarenta e sete";
+                segundoDigitado = "quarenta e sete";
 
             else if (Hora.Second == 48)
-                 segundoDigitado = "quarenta e oito";
+                segundoDigitado = "quarenta e oito";
 
             else if (Hora.Second == 49)
-                 segundoDigitado = "quarenta e nove";
+                segundoDigitado = "quarenta e nove";
 
             else if (Hora.Second == 50)
-                 segundoDigitado = "cinquenta";
+                segundoDigitado = "cinquenta";
 
             else if (Hora.Second == 51)
-                 segundoDigitado = "cinquenta e um";
+                segundoDigitado = "cinquenta e um";
 
             else if (Hora.Second == 52)
-                 segundoDigitado = "cinquenta e dois";
+                segundoDigitado = "cinquenta e dois";
 
             else if (Hora.Second == 53)
-                 segundoDigitado = "cinquenta e três";
+                segundoDigitado = "cinquenta e três";
 
             else if (Hora.Second == 54)
-                 segundoDigitado = "cinquenta e quatro";
+                segundoDigitado = "cinquenta e quatro";
 
             else if (Hora.Second == 55)
-                 segundoDigitado = "cinquenta e cinco";
+                segundoDigitado = "cinquenta e cinco";
 
             else if (Hora.Second == 56)
-                 segundoDigitado = "cinquenta e seis";
+                segundoDigitado = "cinquenta e seis";
 
             else if (Hora.Second == 57)
-                 segundoDigitado = "cinquenta e sete";
+                segundoDigitado = "cinquenta e sete";
 
             else if (Hora.Second == 58)
-                 segundoDigitado = "cinquenta e oito";
+                segundoDigitado = "cinquenta e oito";
 
             else if (Hora.Second == 59)
-                 segundoDigitado = "cinquenta e nove";
+                segundoDigitado = "cinquenta e nove";
+
+            else if (Hora.Second == 0)
+                return segundoZero;
+
 
             var resposta = segundoDigitado + " " + "segundos";
 
