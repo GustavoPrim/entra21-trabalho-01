@@ -8,7 +8,6 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 {
     public class Numero
     {
-
         public double Valor;
 
         //Método 1
@@ -26,7 +25,6 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
                 }
                 
             return numeroDecimalExtenso;
-
         }
 
 
@@ -34,11 +32,9 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         public string ObterUnidadePorExtenso()
         {
-
             string[] unidadesExtenso = new string[9];
 
             string unidadeConvertida = "";
-
 
             unidadesExtenso[0] = "Um";
             unidadesExtenso[1] = "Dois";
@@ -52,30 +48,23 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
             if (Valor == 1)
             {
-
                 unidadeConvertida = unidadesExtenso[0];
-
-
             }
             else if (Valor == 2)
             {
                 unidadeConvertida = unidadesExtenso[1];
-
             }
             else if (Valor == 3)
             {
                 unidadeConvertida = unidadesExtenso[2];
-
             }
             else if (Valor == 4)
             {
                 unidadeConvertida = unidadesExtenso[3];
-
             }
             else if (Valor == 5)
             {
                 unidadeConvertida = unidadesExtenso[4];
-
             }
             else if (Valor == 6)
             {
@@ -83,14 +72,11 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             }
             else if (Valor == 7)
             {
-
                 Console.WriteLine(unidadesExtenso[7]);
-
             }
             else if (Valor == 8)
             {
                 Console.WriteLine(unidadesExtenso[8]);
-
             }
             else if (Valor == 9)
             {
@@ -98,16 +84,12 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             }
 
             return unidadeConvertida;
-
         }
 
         //Método 3
 
         public string ObterDezenaPorExtenso()
         {
-
-
-
             string[] dezenasExtenso = new string[8];
             string dezenaConvertida = "";
 
@@ -178,11 +160,8 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         public string ObterCentenaPorExtenso()
         {
-
             string[] CentenasExtenso = new string[8];
             string centenasConvertidas = "";
-
-
 
             CentenasExtenso[0] = "Cem";
             CentenasExtenso[1] = "Duzentos";
@@ -194,26 +173,21 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             CentenasExtenso[7] = "Oitocentos";
             CentenasExtenso[8] = "Novecentos";
 
-
             if (Valor == 100)
             {
-
                 centenasConvertidas = CentenasExtenso[0];
             }
             else if (Valor == 200)
             {
                 centenasConvertidas = CentenasExtenso[1];
-
             }
             else if (Valor == 300)
             {
                 centenasConvertidas = CentenasExtenso[2];
-
             }
             else if (Valor == 400)
             {
                 centenasConvertidas = CentenasExtenso[3];
-
             }
             else if (Valor == 500)
             {
@@ -225,14 +199,11 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             }
             else if (Valor == 700)
             {
-
                 centenasConvertidas = CentenasExtenso[6];
-
             }
             else if (Valor == 800)
             {
                 centenasConvertidas = CentenasExtenso[7];
-
             }
             else if (Valor == 900)
             {
@@ -240,7 +211,6 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             }
 
             return centenasConvertidas;
-
         }
 
         //Método 5
@@ -263,29 +233,21 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             UnidadeMilharExtenso[7] = "Oito Mil";
             UnidadeMilharExtenso[8] = "Nove Mil";
 
-
             if (Valor == 100)
             {
-
                 unidadesMilharesConvertidas = UnidadeMilharExtenso[0];
-
-
-
             }
             else if (Valor == 200)
             {
                 unidadesMilharesConvertidas = UnidadeMilharExtenso[1];
-
             }
             else if (Valor == 300)
             {
                 unidadesMilharesConvertidas = UnidadeMilharExtenso[2];
-
             }
             else if (Valor == 400)
             {
                 unidadesMilharesConvertidas = UnidadeMilharExtenso[3];
-
             }
             else if (Valor == 500)
             {
@@ -297,19 +259,15 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             }
             else if (Valor == 700)
             {
-
                 unidadesMilharesConvertidas = UnidadeMilharExtenso[6];
-
             }
             else if (Valor == 800)
             {
                 unidadesMilharesConvertidas = UnidadeMilharExtenso[7];
-
             }
             else if (Valor == 900)
             {
                 unidadesMilharesConvertidas = UnidadeMilharExtenso[8];
-
             }
 
 
