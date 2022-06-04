@@ -14,461 +14,469 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
 
         public string ObterHoraPorExtenso()
         {
-            return Hora.Hour.ToString();
+            
             var horaDigitada = "";
 
             if (Hora.Hour == 01)
-                horaDigitada = "uma hora";
+                horaDigitada = "uma hora da manhã";
 
             else if (Hora.Hour == 02)
-                horaDigitada = "duas";
+                horaDigitada = "duas horas da manhã";
 
             else if (Hora.Hour == 03)
-                horaDigitada =  "três";
+                horaDigitada = "três horas da manhã";
 
             else if (Hora.Hour == 04)
-                horaDigitada = "quatro";
+                horaDigitada = "quatro horas da manhã";
 
             else if (Hora.Hour == 05)
-                horaDigitada = "cinco";
+                horaDigitada = "cinco horas da manhã";
 
             else if (Hora.Hour == 06)
-                horaDigitada = "seis";
+                horaDigitada = "seis horas da manhã";
 
             else if (Hora.Hour == 07)
-                horaDigitada = "sete";
+                horaDigitada = "sete horas da manhã";
 
             else if (Hora.Hour == 08)
-                horaDigitada = "oito";
+                horaDigitada = "oito horas da manhã";
 
             else if (Hora.Hour == 09)
-                horaDigitada = "nove";
+                horaDigitada = "nove horas da manhã";
 
             else if (Hora.Hour == 10)
-                horaDigitada = "dez";
+                horaDigitada = "dez horas da manhã";
 
             else if (Hora.Hour == 11)
-                horaDigitada = "onze";
+                horaDigitada = "onze horas da manhã";
 
             else if (Hora.Hour == 12)
-                horaDigitada = "doze";
+                horaDigitada = "meio dia";
 
             else if (Hora.Hour == 13)
-                horaDigitada = "uma hora";
+                horaDigitada = "uma hora da tarde";
 
             else if (Hora.Hour == 14)
-                horaDigitada = "duas";
+                horaDigitada = "duas horas da tarde";
 
             else if (Hora.Hour == 15)
-                horaDigitada = "três";
+                horaDigitada = "três horas da tarde";
 
             else if (Hora.Hour == 16)
-                horaDigitada = "quatro";
+                horaDigitada = "quatro horas da tarde";
 
             else if (Hora.Hour == 17)
-                horaDigitada = "cinco";
+                horaDigitada = "cinco horas da tarde";
 
             else if (Hora.Hour == 18)
-                horaDigitada = "seis";
+                horaDigitada = "seis horas da noite";
 
             else if (Hora.Hour == 19)
-                horaDigitada = "sete";
+                horaDigitada = "sete horas da noite";
 
             else if (Hora.Hour == 20)
-                horaDigitada = "oito";
+                horaDigitada = "oito horas da noite";
 
             else if (Hora.Hour == 21)
-                horaDigitada = "nove";
+                horaDigitada = "nove horas da noite";
 
             else if (Hora.Hour == 22)
-                horaDigitada = "dez";
+                horaDigitada = "dez horas da noite";
 
             else if (Hora.Hour == 23)
-                horaDigitada = "onze";
+                horaDigitada = "onze horas da noite";
 
             else if (Hora.Hour == 00)
                 horaDigitada = "meia noite";
 
-            Console.WriteLine();
-        }
 
-        public string ObterSegundoExtenso()
-        {
-            var valorExt = 0;
-            var segundoDigitado = "";
-
-            if (valorExt == 01)
-                segundoDigitado = "um";
-
-            else if (valorExt == 02)
-                segundoDigitado = "dois";
-
-            else if (valorExt == 03)
-                segundoDigitado = "três";
-
-            else if (valorExt == 04)
-                segundoDigitado = "quatro";
-
-            else if (valorExt == 05)
-                segundoDigitado = "cinco";
-
-            else if (valorExt == 06)
-                segundoDigitado = "seis";
-
-            else if (valorExt == 07)
-                segundoDigitado = "sete";
-
-            else if (valorExt == 08)
-                segundoDigitado = "oito";
-
-            else if (valorExt == 09)
-                segundoDigitado = "nove";
-
-            else if (valorExt == 10)
-                segundoDigitado = "dez";
-
-            else if (valorExt == 11)
-                segundoDigitado = "onze";
-
-            else if (valorExt == 12)
-                segundoDigitado = "doze";
-
-            else if (valorExt == 13)
-                segundoDigitado = "treze";
-
-            else if (valorExt == 14)
-                segundoDigitado = "quatorze";
-
-            else if (valorExt == 15)
-                segundoDigitado = "quinze";
-
-            else if (valorExt == 16)
-                segundoDigitado = "dezesseis";
-
-            else if (valorExt == 17)
-                segundoDigitado = "dezessete";
-
-            else if (valorExt == 18)
-                segundoDigitado = "dezoito";
-
-            else if (valorExt == 19)
-                segundoDigitado = "dezenove";
-
-            else if (valorExt == 20)
-                segundoDigitado = "vinte";
-
-            else if (valorExt == 21)
-                segundoDigitado = "vinte e um";
-
-            else if (valorExt == 22)
-                segundoDigitado = "vinte e dois";
-
-            else if (valorExt == 23)
-                segundoDigitado = "vinte e três";
-
-            else if (valorExt == 24)
-                segundoDigitado = "vinte e quatro";
-
-            else if (valorExt == 25)
-                segundoDigitado = "vinte e cinco";
-
-            else if (valorExt == 26)
-                segundoDigitado = "vinte e seis";
-
-            else if (valorExt == 27)
-                segundoDigitado = "vinte e sete";
-
-            else if (valorExt == 28)
-                segundoDigitado = "vinte e oito";
-
-            else if (valorExt == 29)
-                segundoDigitado = "vinte e nove";
-
-            else if (valorExt == 30)
-                segundoDigitado = "trinta";
-
-            else if (valorExt == 31)
-                segundoDigitado = "trinta e um";
-
-            else if (valorExt == 32)
-                segundoDigitado = "trinta e dois";
-
-            else if (valorExt == 33)
-                segundoDigitado = "trinta e três";
-
-            else if (valorExt == 34)
-                segundoDigitado = "trinta e quatro";
-
-            else if (valorExt == 35)
-                segundoDigitado = "trinta e cinco";
-
-            else if (valorExt == 36)
-                segundoDigitado = "trinta e seis";
-
-            else if (valorExt == 37)
-                segundoDigitado = "trinta e sete";
-
-            else if (valorExt == 38)
-                return "trinta e oito";
-
-            else if (valorExt == 39)
-                return "trinta e nove";
-
-            else if (valorExt == 40)
-                return "quarenta";
-
-            else if (valorExt == 41)
-                return "quarenta e um";
-
-            else if (valorExt == 42)
-                return "quarenta e dois";
-
-            else if (valorExt == 43)
-                return "quarenta e três";
-
-            else if (valorExt == 44)
-                return "quarenta e quatro";
-
-            else if (valorExt == 45)
-                return "quarenta e cinco";
-
-            else if (valorExt == 46)
-                return "quarenta e seis";
-
-            else if (valorExt == 47)
-                return "quarenta e sete";
-
-            else if (valorExt == 48)
-                return "quarenta e oito";
-
-            else if (valorExt == 49)
-                return "quarenta e nove";
-
-            else if (valorExt == 50)
-                return "cinquenta";
-
-            else if (valorExt == 51)
-                return "cinquenta e um";
-
-            else if (valorExt == 52)
-                return "cinquenta e dois";
-
-            else if (valorExt == 53)
-                return "cinquenta e três";
-
-            else if (valorExt == 54)
-                return "cinquenta e quatro";
-
-            else if (valorExt == 55)
-                return "cinquenta e cinco";
-
-            else if (valorExt == 56)
-                return "cinquenta e seis";
-
-            else if (valorExt == 57)
-                return "cinquenta e sete";
-
-            else if (valorExt == 58)
-                return "cinquenta e oito";
-
-            else if (valorExt == 59)
-                return "cinquenta e nove";
-
-            var resposta = valorExt + "segundos";
-
-            return resposta;
-
+            Console.WriteLine(horaDigitada);
+            return horaDigitada;
         }
 
         public string ObterMinutosPorExtenso()
         {
-            var valorExt = 0;
+            var minutoDigitado = "";
+            
 
-            if (valorExt == 01)
-                return "um";
+            if (Hora.Minute == 01)
+                minutoDigitado = "um";
 
-            else if (valorExt == 02)
-                return "dois";
+            else if (Hora.Minute == 02)
+                minutoDigitado = "dois";
 
-            else if (valorExt == 03)
-                return "três";
+            else if (Hora.Minute == 03)
+                minutoDigitado = "três";
 
-            else if (valorExt == 04)
-                return "quatro";
+            else if (Hora.Minute == 04)
+                minutoDigitado = "quatro";
 
-            else if (valorExt == 05)
-                return "cinco";
+            else if (Hora.Minute == 05)
+                minutoDigitado = "cinco";
 
-            else if (valorExt == 06)
-                return "seis";
+            else if (Hora.Minute == 06)
+                minutoDigitado = "seis";
 
-            else if (valorExt == 07)
-                return "sete";
+            else if (Hora.Minute == 07)
+                minutoDigitado = "sete";
 
-            else if (valorExt == 08)
-                return "oito";
+            else if (Hora.Minute == 08)
+                minutoDigitado = "oito";
 
-            else if (valorExt == 09)
-                return "nove";
+            else if (Hora.Minute == 09)
+                minutoDigitado = "nove";
 
-            else if (valorExt == 10)
-                return "dez";
+            else if (Hora.Minute == 10)
+                minutoDigitado = "dez";
 
-            else if (valorExt == 11)
-                return "onze";
+            else if (Hora.Minute == 11)
+                minutoDigitado = "onze";
 
-            else if (valorExt == 12)
-                return "doze";
+            else if (Hora.Minute == 12)
+                minutoDigitado = "doze";
 
-            else if (valorExt == 13)
-                return "treze";
+            else if (Hora.Minute == 13)
+                minutoDigitado = "treze";
 
-            else if (valorExt == 14)
-                return "quatorze";
+            else if (Hora.Minute == 14)
+                minutoDigitado = "quatorze";
 
-            else if (valorExt == 15)
-                return "quinze";
+            else if (Hora.Minute == 15)
+                minutoDigitado = "quinze";
 
-            else if (valorExt == 16)
-                return "dezesseis";
+            else if (Hora.Minute == 16)
+                minutoDigitado = "dezesseis";
 
-            else if (valorExt == 17)
-                return "dezessete";
+            else if (Hora.Minute == 17)
+                minutoDigitado = "dezessete";
 
-            else if (valorExt == 18)
-                return "dezoito";
+            else if (Hora.Minute == 18)
+                minutoDigitado = "dezoito";
 
-            else if (valorExt == 19)
-                return "dezenove";
+            else if (Hora.Minute == 19)
+                minutoDigitado = "dezenove";
 
-            else if (valorExt == 20)
-                return "vinte";
+            else if (Hora.Minute == 20)
+                minutoDigitado = "vinte";
 
-            else if (valorExt == 21)
-                return "vinte e um";
+            else if (Hora.Minute == 21)
+                minutoDigitado = "vinte e um";
 
-            else if (valorExt == 22)
-                return "vinte e dois";
+            else if (Hora.Minute == 22)
+                minutoDigitado = "vinte e dois";
 
-            else if (valorExt == 23)
-                return "vinte e três";
+            else if (Hora.Minute == 23)
+                minutoDigitado = "vinte e três";
 
-            else if (valorExt == 24)
-                return "vinte e quatro";
+            else if (Hora.Minute == 24)
+                minutoDigitado = "vinte e quatro";
 
-            else if (valorExt == 25)
-                return "vinte e cinco";
+            else if (Hora.Minute == 25)
+                minutoDigitado = "vinte e cinco";
 
-            else if (valorExt == 26)
-                return "vinte e seis";
+            else if (Hora.Minute == 26)
+                minutoDigitado = "vinte e seis";
 
-            else if (valorExt == 27)
-                return "vinte e sete";
+            else if (Hora.Minute == 27)
+                minutoDigitado = "vinte e sete";
 
-            else if (valorExt == 28)
-                return "vinte e oito";
+            else if (Hora.Minute == 28)
+                minutoDigitado = "vinte e oito";
 
-            else if (valorExt == 29)
-                return "vinte e nove";
+            else if (Hora.Minute == 29)
+                minutoDigitado = "vinte e nove";
 
-            else if (valorExt == 30)
-                return "trinta";
+            else if (Hora.Minute == 30)
+                minutoDigitado = "trinta";
 
-            else if (valorExt == 31)
-                return "trinta e um";
+            else if (Hora.Minute == 31)
+                minutoDigitado = "trinta e um";
 
-            else if (valorExt == 32)
-                return "trinta e dois";
+            else if (Hora.Minute == 32)
+                minutoDigitado = "trinta e dois";
 
-            else if (valorExt == 33)
-                return "trinta e três";
+            else if (Hora.Minute == 33)
+                minutoDigitado = "trinta e três";
 
-            else if (valorExt == 34)
-                return "trinta e quatro";
+            else if (Hora.Minute == 34)
+                minutoDigitado = "trinta e quatro";
 
-            else if (valorExt == 35)
-                return "trinta e cinco";
+            else if (Hora.Minute == 35)
+                minutoDigitado = "trinta e cinco";
 
-            else if (valorExt == 36)
-                return "trinta e seis";
+            else if (Hora.Minute == 36)
+                minutoDigitado = "trinta e seis";
 
-            else if (valorExt == 37)
-                return "trinta e sete";
+            else if (Hora.Minute == 37)
+                minutoDigitado = "trinta e sete";
 
-            else if (valorExt == 38)
-                return "trinta e oito";
+            else if (Hora.Minute == 38)
+                minutoDigitado = "trinta e oito";
 
-            else if (valorExt == 39)
-                return "trinta e nove";
+            else if (Hora.Minute == 39)
+                minutoDigitado = "trinta e nove";
 
-            else if (valorExt == 40)
-                return "quarenta";
+            else if (Hora.Minute == 40)
+                minutoDigitado = "quarenta";
 
-            else if (valorExt == 41)
-                return "quarenta e um";
+            else if (Hora.Minute == 41)
+                minutoDigitado = "quarenta e um";
 
-            else if (valorExt == 42)
-                return "quarenta e dois";
+            else if (Hora.Minute == 42)
+                minutoDigitado = "quarenta e dois";
 
-            else if (valorExt == 43)
-                return "quarenta e três";
+            else if (Hora.Minute == 43)
+                minutoDigitado = "quarenta e três";
 
-            else if (valorExt == 44)
-                return "quarenta e quatro";
+            else if (Hora.Minute == 44)
+                minutoDigitado = "quarenta e quatro";
 
-            else if (valorExt == 45)
-                return "quarenta e cinco";
+            else if (Hora.Minute == 45)
+                minutoDigitado = "quarenta e cinco";
 
-            else if (valorExt == 46)
-                return "quarenta e seis";
+            else if (Hora.Minute == 46)
+                minutoDigitado = "quarenta e seis";
 
-            else if (valorExt == 47)
-                return "quarenta e sete";
+            else if (Hora.Minute == 47)
+                minutoDigitado = "quarenta e sete";
 
-            else if (valorExt == 48)
-                return "quarenta e oito";
+            else if (Hora.Minute == 48)
+                minutoDigitado = "quarenta e oito";
 
-            else if (valorExt == 49)
-                return "quarenta e nove";
+            else if (Hora.Minute == 49)
+                minutoDigitado = "quarenta e nove";
 
-            else if (valorExt == 50)
-                return "cinquenta";
+            else if (Hora.Minute == 50)
+                minutoDigitado = "cinquenta"; 
 
-            else if (valorExt == 51)
-                return "cinquenta e um";
+            else if (Hora.Minute == 51)
+                minutoDigitado = "cinquenta e um";
 
-            else if (valorExt == 52)
-                return "cinquenta e dois";
+            else if (Hora.Minute == 52)
+                minutoDigitado = "cinquenta e dois";
 
-            else if (valorExt == 53)
-                return "cinquenta e três";
+            else if (Hora.Minute == 53)
+                minutoDigitado = "cinquenta e três";
 
-            else if (valorExt == 54)
-                return "cinquenta e quatro";
+            else if (Hora.Minute == 54)
+                minutoDigitado = "cinquenta e quatro";
 
-            else if (valorExt == 55)
-                return "cinquenta e cinco";
+            else if (Hora.Minute == 55)
+                minutoDigitado = "cinquenta e cinco";
 
-            else if (valorExt == 56)
-                return "cinquenta e seis";
+            else if (Hora.Minute == 56)
+                minutoDigitado = "cinquenta e seis";
 
-            else if (valorExt == 57)
-                return "cinquenta e sete";
+            else if (Hora.Minute == 57)
+                minutoDigitado = "cinquenta e sete";
 
-            else if (valorExt == 58)
-                return "cinquenta e oito";
+            else if (Hora.Minute == 58)
+                minutoDigitado = "cinquenta e oito";
 
-            else if (valorExt == 59)
-                return "cinquenta e nove";
+            else if (Hora.Minute == 59)
+                minutoDigitado = "cinquenta e nove";
 
-            var resposta = valorExt + "minutos";
+            
+            var resposta = minutoDigitado + " " + "minutos";
+            Console.WriteLine(resposta);
+
             return resposta;
+        }
+
+        public string ObterSegundoExtenso()
+        {
+            
+            var segundoDigitado = "";
+
+            if (Hora.Second == 01)
+                segundoDigitado = "um";
+
+            else if (Hora.Second == 02)
+                segundoDigitado = "dois";
+
+            else if (Hora.Second == 03)
+                segundoDigitado = "três";
+
+            else if (Hora.Second == 04)
+                segundoDigitado = "quatro";
+
+            else if (Hora.Second == 05)
+                segundoDigitado = "cinco";
+
+            else if (Hora.Second == 06)
+                segundoDigitado = "seis";
+
+            else if (Hora.Second == 07)
+                segundoDigitado = "sete";
+
+            else if (Hora.Second == 08)
+                segundoDigitado = "oito";
+
+            else if (Hora.Second == 09)
+                segundoDigitado = "nove";
+
+            else if (Hora.Second == 10)
+                segundoDigitado = "dez";
+
+            else if (Hora.Second == 11)
+                segundoDigitado = "onze";
+
+            else if (Hora.Second == 12)
+                segundoDigitado = "doze";
+
+            else if (Hora.Second == 13)
+                segundoDigitado = "treze";
+
+            else if (Hora.Second == 14)
+                segundoDigitado = "quatorze";
+
+            else if (Hora.Second == 15)
+                segundoDigitado = "quinze";
+
+            else if (Hora.Second == 16)
+                segundoDigitado = "dezesseis";
+
+            else if (Hora.Second == 17)
+                segundoDigitado = "dezessete";
+
+            else if (Hora.Second == 18)
+                segundoDigitado = "dezoito";
+
+            else if (Hora.Second == 19)
+                segundoDigitado = "dezenove";
+
+            else if (Hora.Second == 20)
+                segundoDigitado = "vinte";
+
+            else if (Hora.Second == 21)
+                segundoDigitado = "vinte e um";
+
+            else if (Hora.Second == 22)
+                segundoDigitado = "vinte e dois";
+
+            else if (Hora.Second == 23)
+                segundoDigitado = "vinte e três";
+
+            else if (Hora.Second == 24)
+                segundoDigitado = "vinte e quatro";
+
+            else if (Hora.Second == 25)
+                segundoDigitado = "vinte e cinco";
+
+            else if (Hora.Second == 26)
+                segundoDigitado = "vinte e seis";
+
+            else if (Hora.Second == 27)
+                segundoDigitado = "vinte e sete";
+
+            else if (Hora.Second == 28)
+                segundoDigitado = "vinte e oito";
+
+            else if (Hora.Second == 29)
+                segundoDigitado = "vinte e nove";
+
+            else if (Hora.Second == 30)
+                segundoDigitado = "trinta";
+
+            else if (Hora.Second == 31)
+                segundoDigitado = "trinta e um";
+
+            else if (Hora.Second == 32)
+                segundoDigitado = "trinta e dois";
+
+            else if (Hora.Second == 33)
+                segundoDigitado = "trinta e três";
+
+            else if (Hora.Second == 34)
+                segundoDigitado = "trinta e quatro";
+
+            else if (Hora.Second == 35)
+                segundoDigitado = "trinta e cinco";
+
+            else if (Hora.Second == 36)
+                segundoDigitado = "trinta e seis";
+
+            else if (Hora.Second == 37)
+                segundoDigitado = "trinta e sete";
+
+            else if (Hora.Second == 38)
+                segundoDigitado = "trinta e oito";
+
+            else if (Hora.Second == 39)
+                segundoDigitado = "trinta e nove";
+
+            else if (Hora.Second == 40)
+                 segundoDigitado = "quarenta";
+
+            else if (Hora.Second == 41)
+                segundoDigitado = "quarenta e um";
+
+            else if (Hora.Second == 42)
+                segundoDigitado = "quarenta e dois";
+
+            else if (Hora.Second == 43)
+                 segundoDigitado = "quarenta e três";
+
+            else if (Hora.Second == 44)
+                 segundoDigitado = "quarenta e quatro";
+
+            else if (Hora.Second == 45)
+                 segundoDigitado = "quarenta e cinco";
+
+            else if (Hora.Second == 46)
+                 segundoDigitado = "quarenta e seis";
+
+            else if (Hora.Second == 47)
+                 segundoDigitado = "quarenta e sete";
+
+            else if (Hora.Second == 48)
+                 segundoDigitado = "quarenta e oito";
+
+            else if (Hora.Second == 49)
+                 segundoDigitado = "quarenta e nove";
+
+            else if (Hora.Second == 50)
+                 segundoDigitado = "cinquenta";
+
+            else if (Hora.Second == 51)
+                 segundoDigitado = "cinquenta e um";
+
+            else if (Hora.Second == 52)
+                 segundoDigitado = "cinquenta e dois";
+
+            else if (Hora.Second == 53)
+                 segundoDigitado = "cinquenta e três";
+
+            else if (Hora.Second == 54)
+                 segundoDigitado = "cinquenta e quatro";
+
+            else if (Hora.Second == 55)
+                 segundoDigitado = "cinquenta e cinco";
+
+            else if (Hora.Second == 56)
+                 segundoDigitado = "cinquenta e seis";
+
+            else if (Hora.Second == 57)
+                 segundoDigitado = "cinquenta e sete";
+
+            else if (Hora.Second == 58)
+                 segundoDigitado = "cinquenta e oito";
+
+            else if (Hora.Second == 59)
+                 segundoDigitado = "cinquenta e nove";
+
+            var resposta = segundoDigitado + " " + "segundos";
+
+            Console.WriteLine(resposta);
+
+            return resposta;
+
         }
 
         public string ObterHoraCompleta()
         {
             var resposta = "";
-            Console.WriteLine("A hora completa é: " + ObterHoraPorExtenso + ":" +  ObterMinutosPorExtenso + ":" + ObterSegundoExtenso);
+            Console.WriteLine("A hora completa é: " + ObterHoraPorExtenso() + "e" +  ObterMinutosPorExtenso() + "e" + ObterSegundoExtenso());
             resposta = Console.ReadLine();
 
             return resposta.Trim();

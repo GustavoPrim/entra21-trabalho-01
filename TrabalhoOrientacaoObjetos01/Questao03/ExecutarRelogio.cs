@@ -29,6 +29,9 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                  .AddRow("5", "       SAIR       ");
 
             table.Write();
+            int milliseconds = 5000;
+            Thread.Sleep(milliseconds);
+
             Console.Clear();
 
             Console.WriteLine("Digite a opção desejada: ");
