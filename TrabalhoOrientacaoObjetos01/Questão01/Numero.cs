@@ -11,29 +11,26 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         public double Valor;
 
+        //Método 1
 
         public string ObterDecimalPorExtenso()
         {
             int numeroPositivo = 0;
             var numeroDecimalExtenso = "";
 
-            if (Valor * 100 > numeroPositivo)
-            {
+                if (Valor * 100 > numeroPositivo)
+                {
 
-                numeroDecimalExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
+                    numeroDecimalExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
 
-            }
-
+                }
+                
             return numeroDecimalExtenso;
 
         }
 
 
-
-
-
-
-
+        // Método 2
 
         public string ObterUnidadePorExtenso()
         {
@@ -104,13 +101,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         }
 
-
-
-
-
-
-
-
+        //Método 3
 
         public string ObterDezenaPorExtenso()
         {
@@ -131,64 +122,59 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             dezenasExtenso[8] = "Noventa";
 
 
+                if (Valor == 10)
+                {
+                    dezenaConvertida = dezenasExtenso[0];
 
-            if (Valor == 10)
-            {
-                dezenaConvertida = dezenasExtenso[0];
+                }
+                else if (Valor == 20)
+                {
+                    Console.WriteLine(dezenasExtenso[1]);
 
-            }
-            else if (Valor == 20)
-            {
-                Console.WriteLine(dezenasExtenso[1]);
+                }
+                else if (Valor == 30)
+                {
+                    Console.WriteLine(dezenasExtenso[2]);
 
-            }
-            else if (Valor == 30)
-            {
-                Console.WriteLine(dezenasExtenso[2]);
+                }
+                else if (Valor == 40)
+                {
+                    Console.WriteLine(dezenasExtenso[3]);
 
-            }
-            else if (Valor == 40)
-            {
-                Console.WriteLine(dezenasExtenso[3]);
+                }
+                else if (Valor == 50)
+                {
+                    Console.WriteLine(dezenasExtenso[4]);
 
-            }
-            else if (Valor == 50)
-            {
-                Console.WriteLine(dezenasExtenso[4]);
+                }
+                else if (Valor == 60)
+                {
+                    Console.WriteLine(dezenasExtenso[5]);
+                }
+                else if (Valor == 70)
+                {
 
-            }
-            else if (Valor == 60)
-            {
-                Console.WriteLine(dezenasExtenso[5]);
-            }
-            else if (Valor == 70)
-            {
+                    Console.WriteLine(dezenasExtenso[6]);
 
-                Console.WriteLine(dezenasExtenso[6]);
+                }
+                else if (Valor == 80)
+                {
+                    Console.WriteLine(dezenasExtenso[7]);
 
-            }
-            else if (Valor == 80)
-            {
-                Console.WriteLine(dezenasExtenso[7]);
-
-            }
-            else if (Valor == 90)
-            {
-                Console.WriteLine(dezenasExtenso[8]);
-            }
-
+                }
+                else if (Valor == 90)
+                {
+                    Console.WriteLine(dezenasExtenso[8]);
+                }
 
 
-            return dezenaConvertida;
 
+                return dezenaConvertida;
+
+            
         }
 
-
-
-
-
-
-
+        // Método 4
 
         public string ObterCentenaPorExtenso()
         {
@@ -256,6 +242,9 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             return centenasConvertidas;
 
         }
+
+        //Método 5
+
     public string ObterUnidadeDeMilharPorExtenso()
     {
 
@@ -264,15 +253,15 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
 
-            UnidadeMilharExtenso[0] = "Dois Mil";
-            UnidadeMilharExtenso[1] = "Três Mil";
-            UnidadeMilharExtenso[2] = "Quatro Mil";
-            UnidadeMilharExtenso[3] = "Cinco Mil";
-            UnidadeMilharExtenso[4] = "Seis Mil";
-            UnidadeMilharExtenso[5] = "Sete Mil";
-            UnidadeMilharExtenso[6] = "Oito Mil";
-            UnidadeMilharExtenso[7] = "Nove Mil";
-            UnidadeMilharExtenso[8] = "Dez Mil";
+            UnidadeMilharExtenso[0] = " Mil";
+            UnidadeMilharExtenso[1] = "Dois Mil";
+            UnidadeMilharExtenso[2] = "Três Mil";
+            UnidadeMilharExtenso[3] = "Quatro Mil";
+            UnidadeMilharExtenso[4] = "Cinco Mil";
+            UnidadeMilharExtenso[5] = "Seis Mil";
+            UnidadeMilharExtenso[6] = "Sete Mil";
+            UnidadeMilharExtenso[7] = "Oito Mil";
+            UnidadeMilharExtenso[8] = "Nove Mil";
 
 
             if (Valor == 100)
@@ -329,20 +318,51 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
         Console.WriteLine(unidadesMilharesConvertidas);
         return unidadesMilharesConvertidas;
     }
+
+        //Método 6
+
     public string NumeroCompletoPorExtenso()
     {
-
-        
-      var resposta = "O numero completo é: " + ObterUnidadeDeMilharPorExtenso() + ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso() + "," +ObterDecimalPorExtenso();
-
-
-            return resposta;
-    }
+            Valor = Valor.ToString().Length;
+            var numeroExtenso = "";
 
 
+            if (Valor < 10)
+            {
 
-    }
+                numeroExtenso = ObterUnidadePorExtenso();
 
+
+            }
+            else if (Valor < 100)
+            {
+
+                numeroExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
+
+            }
+            else if (Valor < 1000)
+            {
+
+                numeroExtenso = ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
+
+
+            }
+            else if (Valor < 10000) {
+
+                numeroExtenso = ObterUnidadeDeMilharPorExtenso() + ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
+
+
+
+            }
+            return numeroExtenso;
+
+            ////var resposta = ObterUnidadePorExtenso() + ObterDezenaPorExtenso() + ObterCentenaPorExtenso() + ObterUnidadeDeMilharPorExtenso();
+            ////Valor = Convert.ToDouble(Console.ReadLine());
+            ////Console.WriteLine(resposta);
+
+            ////return resposta;
+     }
+  }
 }
 
       
