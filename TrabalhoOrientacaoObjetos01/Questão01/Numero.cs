@@ -17,16 +17,16 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
 
-        int numeroPositivo = 0;
-        var numeroDecimalExtenso = "";
+            int numeroPositivo = 0;
+            var numeroDecimalExtenso = "";
 
-                if (Valor* 100 > numeroPositivo)
-                {
+            if (Valor * 100 > numeroPositivo)
+            {
 
-                    numeroDecimalExtenso = ObterDezenaPorExtenso()+ ObterUnidadePorExtenso() + "Décimos";
+                numeroDecimalExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso() + "Décimos";
 
-                }
-                
+            }
+
             return numeroDecimalExtenso;
         }
 
@@ -214,9 +214,9 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
 
-                return dezenaConvertida;
+            return dezenaConvertida;
 
-            
+
         }
 
         // Método 4
@@ -278,8 +278,8 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         //Método 5
 
-    public string ObterUnidadeDeMilharPorExtenso()
-    {
+        public string ObterUnidadeDeMilharPorExtenso()
+        {
 
             //string[] UnidadeMilharExtenso = new string[8];
             string unidadesMilharesConvertidas = "";
@@ -373,6 +373,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
             }
+            Console.WriteLine($"O número completo por extenso é {numeroExtenso}");
             return numeroExtenso;
 
             ////var resposta = ObterUnidadePorExtenso() + ObterDezenaPorExtenso() + ObterCentenaPorExtenso() + ObterUnidadeDeMilharPorExtenso();
@@ -396,4 +397,3 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
   }
 }
 
-      
