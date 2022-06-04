@@ -14,13 +14,16 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         public string ObterDecimalPorExtenso()
         {
-            int numeroPositivo = 0;
-            var numeroDecimalExtenso = "";
 
-                if (Valor * 100 > numeroPositivo)
+
+
+        int numeroPositivo = 0;
+        var numeroDecimalExtenso = "";
+
+                if (Valor* 100 > numeroPositivo)
                 {
 
-                    numeroDecimalExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
+                    numeroDecimalExtenso = ObterDezenaPorExtenso()+ ObterUnidadePorExtenso() + "Décimos";
 
                 }
                 
@@ -32,55 +35,55 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         public string ObterUnidadePorExtenso()
         {
-            string[] unidadesExtenso = new string[9];
+            //string[] unidadesExtenso = new string[9];
 
             string unidadeConvertida = "";
 
-            unidadesExtenso[0] = "Um";
-            unidadesExtenso[1] = "Dois";
-            unidadesExtenso[2] = "Três";
-            unidadesExtenso[3] = "Quatro";
-            unidadesExtenso[4] = "Cinco";
-            unidadesExtenso[5] = "Seis";
-            unidadesExtenso[6] = "Sete";
-            unidadesExtenso[7] = "Oito";
-            unidadesExtenso[8] = "Nove";
+            //unidadesExtenso[0] = "Um";
+            //unidadesExtenso[1] = "Dois";
+            //unidadesExtenso[2] = "Três";
+            //unidadesExtenso[3] = "Quatro";
+            //unidadesExtenso[4] = "Cinco";
+            //unidadesExtenso[5] = "Seis";
+            //unidadesExtenso[6] = "Sete";
+            //unidadesExtenso[7] = "Oito";
+            //unidadesExtenso[8] = "Nove";
 
             if (Valor == 1)
             {
-                unidadeConvertida = unidadesExtenso[0];
+                unidadeConvertida = "Um";
             }
             else if (Valor == 2)
             {
-                unidadeConvertida = unidadesExtenso[1];
+                unidadeConvertida = "Dois";
             }
             else if (Valor == 3)
             {
-                unidadeConvertida = unidadesExtenso[2];
+                unidadeConvertida = "Três";
             }
             else if (Valor == 4)
             {
-                unidadeConvertida = unidadesExtenso[3];
+                unidadeConvertida = "Quatro";
             }
             else if (Valor == 5)
             {
-                unidadeConvertida = unidadesExtenso[4];
+                unidadeConvertida = "Cinco";
             }
             else if (Valor == 6)
             {
-                unidadeConvertida = unidadesExtenso[5];
+                unidadeConvertida = "Seis";
             }
             else if (Valor == 7)
             {
-                Console.WriteLine(unidadesExtenso[7]);
+                unidadeConvertida = "Sete";
             }
             else if (Valor == 8)
             {
-                Console.WriteLine(unidadesExtenso[8]);
+                unidadeConvertida = "Oito";
             }
             else if (Valor == 9)
             {
-                Console.WriteLine(unidadesExtenso[9]);
+                unidadeConvertida = "Nove";
             }
 
             return unidadeConvertida;
@@ -90,63 +93,63 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         public string ObterDezenaPorExtenso()
         {
-            string[] dezenasExtenso = new string[8];
+            //string[] dezenasExtenso = new string[8];
             string dezenaConvertida = "";
 
-            dezenasExtenso[0] = "Dez";
-            dezenasExtenso[1] = "Vinte";
-            dezenasExtenso[2] = "Trinta";
-            dezenasExtenso[3] = "Quarenta";
-            dezenasExtenso[4] = "Cinquenta";
-            dezenasExtenso[5] = "Sessenta";
-            dezenasExtenso[6] = "Setenta";
-            dezenasExtenso[7] = "Oitenta";
-            dezenasExtenso[8] = "Noventa";
+            //dezenasExtenso[0] = "Dez";
+            //dezenasExtenso[1] = "Vinte";
+            //dezenasExtenso[2] = "Trinta";
+            //dezenasExtenso[3] = "Quarenta";
+            //dezenasExtenso[4] = "Cinquenta";
+            //dezenasExtenso[5] = "Sessenta";
+            //dezenasExtenso[6] = "Setenta";
+            //dezenasExtenso[7] = "Oitenta";
+            //dezenasExtenso[8] = "Noventa";
 
 
-                if (Valor == 10)
+            if (Valor == 10)
                 {
-                    dezenaConvertida = dezenasExtenso[0];
+                    dezenaConvertida = "Dez";
 
                 }
                 else if (Valor == 20)
                 {
-                    Console.WriteLine(dezenasExtenso[1]);
+                    dezenaConvertida = "Vinte";
 
                 }
                 else if (Valor == 30)
                 {
-                    Console.WriteLine(dezenasExtenso[2]);
+                     dezenaConvertida = "Trinta";
 
                 }
                 else if (Valor == 40)
                 {
-                    Console.WriteLine(dezenasExtenso[3]);
+                    dezenaConvertida = "Quarenta";
 
                 }
                 else if (Valor == 50)
                 {
-                    Console.WriteLine(dezenasExtenso[4]);
+                    dezenaConvertida = "Cinquenta";
 
                 }
                 else if (Valor == 60)
                 {
-                    Console.WriteLine(dezenasExtenso[5]);
+                    dezenaConvertida = "Sessenta";
                 }
                 else if (Valor == 70)
                 {
 
-                    Console.WriteLine(dezenasExtenso[6]);
+                    dezenaConvertida = "Setenta";
 
                 }
                 else if (Valor == 80)
                 {
-                    Console.WriteLine(dezenasExtenso[7]);
+                    dezenaConvertida = "Oitenta";
 
                 }
                 else if (Valor == 90)
                 {
-                    Console.WriteLine(dezenasExtenso[8]);
+                    dezenaConvertida = "Noventa";
                 }
 
 
@@ -160,54 +163,54 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         public string ObterCentenaPorExtenso()
         {
-            string[] CentenasExtenso = new string[8];
+            //string[] CentenasExtenso = new string[8];
             string centenasConvertidas = "";
 
-            CentenasExtenso[0] = "Cem";
-            CentenasExtenso[1] = "Duzentos";
-            CentenasExtenso[2] = "Trezentos";
-            CentenasExtenso[3] = "Quatrocentos";
-            CentenasExtenso[4] = "Quinhentos";
-            CentenasExtenso[5] = "Seiscentos";
-            CentenasExtenso[6] = "Setecentos";
-            CentenasExtenso[7] = "Oitocentos";
-            CentenasExtenso[8] = "Novecentos";
+            //CentenasExtenso[0] = "Cem";
+            //CentenasExtenso[1] = "Duzentos";
+            //CentenasExtenso[2] = "Trezentos";
+            //CentenasExtenso[3] = "Quatrocentos";
+            //CentenasExtenso[4] = "Quinhentos";
+            //CentenasExtenso[5] = "Seiscentos";
+            //CentenasExtenso[6] = "Setecentos";
+            //CentenasExtenso[7] = "Oitocentos";
+            //CentenasExtenso[8] = "Novecentos";
 
             if (Valor == 100)
             {
-                centenasConvertidas = CentenasExtenso[0];
+                centenasConvertidas = "Cem";
             }
             else if (Valor == 200)
             {
-                centenasConvertidas = CentenasExtenso[1];
+                centenasConvertidas = "Duzentos";
             }
             else if (Valor == 300)
             {
-                centenasConvertidas = CentenasExtenso[2];
+                centenasConvertidas = "Trezentos";
             }
             else if (Valor == 400)
             {
-                centenasConvertidas = CentenasExtenso[3];
+                centenasConvertidas = "Quatrocentos";
             }
             else if (Valor == 500)
             {
-                centenasConvertidas = CentenasExtenso[4];
+                centenasConvertidas = "Quinhentos";
             }
             else if (Valor == 600)
             {
-                centenasConvertidas = CentenasExtenso[5];
+                centenasConvertidas = "Seiscentos";
             }
             else if (Valor == 700)
             {
-                centenasConvertidas = CentenasExtenso[6];
+                centenasConvertidas = "Setecentos";
             }
             else if (Valor == 800)
             {
-                centenasConvertidas = CentenasExtenso[7];
+                centenasConvertidas = "Oitocentos";
             }
             else if (Valor == 900)
             {
-                centenasConvertidas = CentenasExtenso[8];
+                centenasConvertidas = "Novecentos";
             }
 
             return centenasConvertidas;
