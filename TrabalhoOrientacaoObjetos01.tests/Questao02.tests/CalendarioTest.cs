@@ -28,11 +28,14 @@ namespace TrabalhoOrientacaoObjetos01.tests.Questao02.tests
 
         public void Validar_Meses_Extenso(int mes, string mesPorExtenso)
         {
+            //Arrange
             var calendario = new Calendario();
             calendario.Data = new DateTime(2022, mes, 01);
 
+            //Act
             var mesesPorExtenso = calendario.ObterMesPorExtenso();
 
+            //Assert
             mesesPorExtenso.Should().Be(mesPorExtenso);
         }
 
@@ -71,11 +74,14 @@ namespace TrabalhoOrientacaoObjetos01.tests.Questao02.tests
 
         public void Validar_Dias_Extenso(int dia, string diaExtenso)
         {
+            //Arrange
             var calendario = new Calendario();
             calendario.Data = new DateTime(2022, 12, dia);
 
+            //Act
             var diaPorExtenso = calendario.ObterDiaPorExtenso();
 
+            //Assert
             diaPorExtenso.Should().Be(diaExtenso);
         }
 
@@ -144,11 +150,14 @@ namespace TrabalhoOrientacaoObjetos01.tests.Questao02.tests
 
         public void Validar_Anos_Extenso(int ano, string anoExtenso)
         {
+            //Arrange
             var calendario = new Calendario();
             calendario.Data = new DateTime(ano, 08, 18);
 
+            //Act
             var anoPorExtenso = calendario.ObterAnoPorExtenso();
 
+            //Assert
             anoPorExtenso.Should().Be(anoExtenso);
         }
 
@@ -168,11 +177,14 @@ namespace TrabalhoOrientacaoObjetos01.tests.Questao02.tests
 
         public void Validar_Datas_Diferentes(int dia, int mes, int ano, string dataPorExtenso)
         {
+            //Arrange
             var calendario = new Calendario();
             calendario.Data = new DateTime(ano, mes, dia);
 
+            //Act
             var dataCompletaPorExtenso = calendario.ObterDataCompletaPorExtenso();
 
+            //Assert
             dataCompletaPorExtenso.Should().Be(dataPorExtenso);
         }
     }
