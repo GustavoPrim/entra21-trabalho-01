@@ -102,37 +102,37 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                 diaPorExtenso = "Nove ";
 
             else if (Data.Day == 10)
-                diaPorExtenso = "Dez";
+                diaPorExtenso = "Dez ";
 
             else if (Data.Day == 11)
-                diaPorExtenso = "Onze";
+                diaPorExtenso = "Onze ";
 
             else if (Data.Day == 12)
-                diaPorExtenso = "Doze";
+                diaPorExtenso = "Doze ";
 
             else if (Data.Day == 13)
-                diaPorExtenso = "Treze";
+                diaPorExtenso = "Treze ";
 
             else if (Data.Day == 14)
-                diaPorExtenso = "Quatorze";
+                diaPorExtenso = "Quatorze ";
 
             else if (Data.Day == 15)
-                diaPorExtenso = "Quinze";
+                diaPorExtenso = "Quinze ";
 
             else if (Data.Day == 16)
-                diaPorExtenso = "Dezesseis";
+                diaPorExtenso = "Dezesseis ";
 
             else if (Data.Day == 17)
-                diaPorExtenso = "Dezessete";
+                diaPorExtenso = "Dezessete ";
 
             else if (Data.Day == 18)
-                diaPorExtenso = "Dezoito";
+                diaPorExtenso = "Dezoito ";
 
             else if (Data.Day == 19)
-                diaPorExtenso = "Dezenove";
+                diaPorExtenso = "Dezenove ";
 
             else if (Data.Day == 20)
-                diaPorExtenso = dezenas[1];
+                diaPorExtenso = dezenas[0];
 
             else if (Data.Day == 21)
                 diaPorExtenso = dezenas[0] + unidades[0];
@@ -370,6 +370,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
+
             Console.WriteLine($"Data completa por extenso é {dataCompletaPorExtenso}");
             return dataCompletaPorExtenso;
         }
