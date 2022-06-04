@@ -2,7 +2,7 @@
 using TrabalhoOrientacaoObjetos01.Questao02;
 using TrabalhoOrientacaoObjetos01.Questao03;
 
-Console.WriteLine(@" ----------Menu----------
+Console.WriteLine(@"           Menu         
 1 - Exercício 01
 2 - Exercício 02
 3 - Exercício 03");

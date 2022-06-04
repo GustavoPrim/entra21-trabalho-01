@@ -8,7 +8,7 @@ using Xunit;
 
 namespace TrabalhoOrientacaoObjetos01.tests.Questão01.tests
 {
-    public class Numero
+    public class NumeroTest
     {
        
 
@@ -17,7 +17,7 @@ namespace TrabalhoOrientacaoObjetos01.tests.Questão01.tests
 
         public void ValidarNumeroDecimal()
         {
-            var numero = new Numero();
+            var numero = new NumeroTest();
            
          
 

@@ -14,7 +14,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             Numero numero = new Numero();
 
             Console.WriteLine("Informe um valor: ");
-            numero.Valor = Convert.ToDouble(Console.ReadLine().ToString());
+            numero.Valor = Convert.ToDouble(Console.ReadLine());
 
             numero.NumeroCompletoPorExtenso();
 

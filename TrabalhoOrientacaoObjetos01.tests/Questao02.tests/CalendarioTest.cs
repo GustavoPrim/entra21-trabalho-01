@@ -12,29 +12,39 @@ namespace TrabalhoOrientacaoObjetos01.tests.Questao02.tests
     public class CalendarioTest
     {
         [Fact]
-
-        public void Validar_Obter_Mes_PorExtenso()
+        public void Validar_Mes_Extenso()
         {
             var calendario = new Calendario();
-
-            calendario.Data = new DateTime(27, 08, 2025);
-
+            calendario.Data = new DateTime(2018, 08, 18);
             var mesPorExtenso = calendario.ObterMesPorExtenso();
-
             mesPorExtenso.Should().Be("Agosto");
         }
 
         [Fact]
-
-        public void Validar_Obter_Dia_PorExtenso()
+        public void Validar_Dia_Extenso()
         {
             var calendario = new Calendario();
-
-            calendario.Data = new DateTime(27, 08, 2020);
-
+            calendario.Data = new DateTime(2025, 02, 19);
             var diaPorExtenso = calendario.ObterDiaPorExtenso();
+            diaPorExtenso.Should().Be("Dezenove");
+        }
 
-            diaPorExtenso.Should().Be("Vinte e sete");
+        [Fact]
+        public void Validar_Ano_Extenso()
+        {
+            var calendario = new Calendario();
+            calendario.Data = new DateTime(1989, 07, 31);
+            var anoPorExtenso = calendario.ObterAnoPorExtenso();
+            anoPorExtenso.Should().Be("Mil novecentos e oitenta e nove");
+        }
+        
+        [Fact]
+        public void Validar_Data_Completa_Extenso()
+        {
+            var calendario = new Calendario();
+            calendario.Data = new DateTime(1979, 08, 31);
+            var dataCompletaPorExtenso = calendario.ObterDataCompletaPorExtenso();
+            dataCompletaPorExtenso.Should().Be("Trinta e um de Agosto de Mil novecentos e setenta e nove");
         }
     }
 }

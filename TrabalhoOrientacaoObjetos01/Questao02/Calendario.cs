@@ -51,7 +51,6 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Month == 12)
                 mesPorExtenso = "Dezembro";
 
-            Console.Clear();
             Console.WriteLine(mesPorExtenso);
             return mesPorExtenso;
         }
@@ -168,7 +167,6 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Day == 31)
                 diaPorExtenso = dezenas[1] + unidades[0];
 
-            Console.Clear();
             Console.WriteLine(diaPorExtenso);
             return diaPorExtenso;
         }
@@ -362,7 +360,6 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Year == ano - 60)
                 anoNomesExtenso = "Mil novecentos e setenta";
 
-            Console.Clear();
             Console.WriteLine(anoNomesExtenso);
             return anoNomesExtenso;
         }
@@ -370,7 +367,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
         public string ObterDataCompletaPorExtenso()
         {
             var dataCompletaPorExtenso = ObterDiaPorExtenso() + " de " + ObterMesPorExtenso() + " de " + ObterAnoPorExtenso();
-            Console.Clear();
+
             Console.WriteLine(dataCompletaPorExtenso);
             return dataCompletaPorExtenso;
         }
