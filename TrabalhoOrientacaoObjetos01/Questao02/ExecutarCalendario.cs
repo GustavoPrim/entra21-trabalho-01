@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//GUSTAVO PRIM
 namespace TrabalhoOrientacaoObjetos01.Questao02
 {
     public class ExecutarCalendario
@@ -27,7 +28,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                      .AddRow("2", "Mês por extenso")
                      .AddRow("3", "Ano por extenso")
                      .AddRow("4", "Data completa por extenso")
-                     .AddRow("5", "       SAIR       ");
+                     .AddRow("5", "          SAIR       ");
 
                 table.Write();
 

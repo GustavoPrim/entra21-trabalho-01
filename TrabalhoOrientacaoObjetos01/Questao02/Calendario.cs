@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//GUSTAVO HENRIQUE PRIM
+//GUSTAVO PRIM
 namespace TrabalhoOrientacaoObjetos01.Questao02
 {
     public class Calendario
@@ -51,7 +51,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Month == 12)
                 mesPorExtenso = "Dezembro";
 
-            Console.WriteLine(mesPorExtenso);
+            Console.WriteLine($"Mês escrito por extenso é {mesPorExtenso}");
             return mesPorExtenso;
         }
 
@@ -167,7 +167,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Day == 31)
                 diaPorExtenso = dezenas[1] + unidades[0];
 
-            Console.WriteLine(diaPorExtenso);
+            Console.WriteLine($"Dia escrito por extenso é {diaPorExtenso}");
             return diaPorExtenso;
         }
 
@@ -360,15 +360,17 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.Year == ano - 60)
                 anoNomesExtenso = "Mil novecentos e setenta";
 
-            Console.WriteLine(anoNomesExtenso);
+            Console.WriteLine($"Ano escrito por extenso é {anoNomesExtenso}");
             return anoNomesExtenso;
         }
 
         public string ObterDataCompletaPorExtenso()
         {
             var dataCompletaPorExtenso = ObterDiaPorExtenso() + " de " + ObterMesPorExtenso() + " de " + ObterAnoPorExtenso();
-
-            Console.WriteLine(dataCompletaPorExtenso);
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine($"Data completa por extenso é {dataCompletaPorExtenso}");
             return dataCompletaPorExtenso;
         }
     }
