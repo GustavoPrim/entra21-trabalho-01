@@ -108,49 +108,109 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
             if (Valor == 10)
-                {
-                    dezenaConvertida = "Dez";
+            {
+                dezenaConvertida = "Dez";
 
-                }
-                else if (Valor == 20)
-                {
-                    dezenaConvertida = "Vinte";
+            }
+            else if (Valor == 11)
+            {
 
-                }
-                else if (Valor == 30)
-                {
-                     dezenaConvertida = "Trinta";
 
-                }
-                else if (Valor == 40)
-                {
-                    dezenaConvertida = "Quarenta";
+                dezenaConvertida = "Onze";
 
-                }
-                else if (Valor == 50)
-                {
-                    dezenaConvertida = "Cinquenta";
+            }
+            else if (Valor == 12)
+            {
 
-                }
-                else if (Valor == 60)
-                {
-                    dezenaConvertida = "Sessenta";
-                }
-                else if (Valor == 70)
-                {
 
-                    dezenaConvertida = "Setenta";
+                dezenaConvertida = "Doze";
 
-                }
-                else if (Valor == 80)
-                {
-                    dezenaConvertida = "Oitenta";
+            }
+            else if (Valor== 13)
+            {
+ 
+                dezenaConvertida = "Treze";
 
-                }
-                else if (Valor == 90)
-                {
-                    dezenaConvertida = "Noventa";
-                }
+
+            }
+            else if (Valor == 14)
+            {
+
+                dezenaConvertida = "Quatorze";
+            }
+            else if (Valor == 15)
+            {
+
+                dezenaConvertida = "Quinze";
+
+
+
+            }
+            else if (Valor == 16)
+            {
+                dezenaConvertida = "Dezesseis";
+
+
+            }
+            else if (Valor == 17)
+            {
+
+                dezenaConvertida = "Dezessete";
+
+
+            }
+            else if (Valor == 18)
+            {
+
+                dezenaConvertida = "Dezoito";
+
+
+            }
+            else if (Valor == 19) {
+
+                dezenaConvertida = "Dezenove";
+
+
+            }
+            else if (Valor >= 20)
+            {
+                dezenaConvertida = "Vinte";
+
+            }
+            else if (Valor >= 30)
+            {
+                dezenaConvertida = "Trinta";
+
+            }
+            else if (Valor >= 40)
+            {
+                dezenaConvertida = "Quarenta";
+
+            }
+            else if (Valor >= 50)
+            {
+                dezenaConvertida = "Cinquenta";
+
+            }
+            else if (Valor >= 60)
+            {
+                dezenaConvertida = "Sessenta";
+            }
+            else if (Valor >= 70)
+            {
+
+                dezenaConvertida = "Setenta";
+
+            }
+            else if (Valor >= 80)
+            {
+                dezenaConvertida = "Oitenta";
+
+            }
+            else if (Valor >= 90)
+            {
+                dezenaConvertida = "Noventa";
+            }
 
 
 
@@ -176,39 +236,39 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             //CentenasExtenso[7] = "Oitocentos";
             //CentenasExtenso[8] = "Novecentos";
 
-            if (Valor == 100)
+            if (Valor >= 100 && Valor < 200)
             {
                 centenasConvertidas = "Cem";
             }
-            else if (Valor == 200)
+            else if (Valor >= 200 && Valor < 300)
             {
                 centenasConvertidas = "Duzentos";
             }
-            else if (Valor == 300)
+            else if (Valor >= 300 && Valor < 400)
             {
                 centenasConvertidas = "Trezentos";
             }
-            else if (Valor == 400)
+            else if (Valor >= 400 )
             {
                 centenasConvertidas = "Quatrocentos";
             }
-            else if (Valor == 500)
+            else if (Valor >= 500)
             {
                 centenasConvertidas = "Quinhentos";
             }
-            else if (Valor == 600)
+            else if (Valor >= 600)
             {
                 centenasConvertidas = "Seiscentos";
             }
-            else if (Valor == 700)
+            else if (Valor >= 700)
             {
                 centenasConvertidas = "Setecentos";
             }
-            else if (Valor == 800)
+            else if (Valor >= 800)
             {
                 centenasConvertidas = "Oitocentos";
             }
-            else if (Valor == 900)
+            else if (Valor >= 900)
             {
                 centenasConvertidas = "Novecentos";
             }
@@ -221,60 +281,57 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
     public string ObterUnidadeDeMilharPorExtenso()
     {
 
-            string[] UnidadeMilharExtenso = new string[8];
+            //string[] UnidadeMilharExtenso = new string[8];
             string unidadesMilharesConvertidas = "";
 
 
 
-            UnidadeMilharExtenso[0] = " Mil";
-            UnidadeMilharExtenso[1] = "Dois Mil";
-            UnidadeMilharExtenso[2] = "Três Mil";
-            UnidadeMilharExtenso[3] = "Quatro Mil";
-            UnidadeMilharExtenso[4] = "Cinco Mil";
-            UnidadeMilharExtenso[5] = "Seis Mil";
-            UnidadeMilharExtenso[6] = "Sete Mil";
-            UnidadeMilharExtenso[7] = "Oito Mil";
-            UnidadeMilharExtenso[8] = "Nove Mil";
+            //UnidadeMilharExtenso[0] = " Mil";
+            //UnidadeMilharExtenso[1] = "Dois Mil";
+            //UnidadeMilharExtenso[2] = "Três Mil";
+            //UnidadeMilharExtenso[3] = "Quatro Mil";
+            //UnidadeMilharExtenso[4] = "Cinco Mil";
+            //UnidadeMilharExtenso[5] = "Seis Mil";
+            //UnidadeMilharExtenso[6] = "Sete Mil";
+            //UnidadeMilharExtenso[7] = "Oito Mil";
+            //UnidadeMilharExtenso[8] = "Nove Mil";
 
-            if (Valor == 100)
+            if (Valor >= 1000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[0];
+                unidadesMilharesConvertidas = "Mil";
             }
-            else if (Valor == 200)
+            else if (Valor >= 2000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[1];
+                unidadesMilharesConvertidas = "Dois mil";
             }
-            else if (Valor == 300)
+            else if (Valor >= 3000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[2];
+                unidadesMilharesConvertidas = "Três mil";
             }
-            else if (Valor == 400)
+            else if (Valor >= 4000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[3];
+                unidadesMilharesConvertidas = "Quatro Mil";
             }
-            else if (Valor == 500)
+            else if (Valor >= 5000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[4];
+                unidadesMilharesConvertidas = "Cinco mil";
             }
-            else if (Valor == 600)
+            else if (Valor >= 6000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[5];
+                unidadesMilharesConvertidas = "Seis mil";
             }
-            else if (Valor == 700)
+            else if (Valor >= 7000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[6];
+                unidadesMilharesConvertidas = "Sete Mil";
             }
-            else if (Valor == 800)
+            else if (Valor >= 8000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[7];
+                unidadesMilharesConvertidas = "Oito mil";
             }
-            else if (Valor == 900)
+            else if (Valor >= 9000)
             {
-                unidadesMilharesConvertidas = UnidadeMilharExtenso[8];
+                unidadesMilharesConvertidas = "Nove mil";
             }
-
-
-
 
         Console.WriteLine(unidadesMilharesConvertidas);
         return unidadesMilharesConvertidas;
@@ -284,31 +341,32 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
     public string NumeroCompletoPorExtenso()
     {
-            Valor = Valor.ToString().Length;
+
+
             var numeroExtenso = "";
 
 
-            if (Valor < 10)
+            if (Valor <= 10)
             {
 
                 numeroExtenso = ObterUnidadePorExtenso();
 
 
             }
-            else if (Valor < 100)
+            else if (Valor <= 100)
             {
 
                 numeroExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
 
             }
-            else if (Valor < 1000)
+            else if (Valor <= 1000)
             {
 
                 numeroExtenso = ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
 
 
             }
-            else if (Valor < 10000) {
+            else if (Valor <= 10000) {
 
                 numeroExtenso = ObterUnidadeDeMilharPorExtenso() + ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
 
@@ -323,6 +381,18 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
             ////return resposta;
      }
+
+
+
+
+
+
+
+
+
+
+
+
   }
 }
 
