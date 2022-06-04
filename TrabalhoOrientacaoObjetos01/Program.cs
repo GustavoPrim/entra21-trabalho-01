@@ -4,7 +4,7 @@ using TrabalhoOrientacaoObjetos01.Questao03;
 
 
 var opcaoSelecionada = 0;
-while(opcaoSelecionada != 4)
+while (opcaoSelecionada != 4)
 {
     Console.WriteLine(@"           Menu         
 01 - Exercício 01
@@ -13,7 +13,7 @@ while(opcaoSelecionada != 4)
 04 -    SAIR  ");
 
     var opcaoValida = false;
-    while(opcaoValida == false)
+    while (opcaoValida == false)
     {
         try
         {

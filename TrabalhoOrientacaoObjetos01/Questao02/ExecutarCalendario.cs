@@ -41,7 +41,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                         opcaoEscolhida = Convert.ToInt32(Console.ReadLine());
                         Console.Clear();
 
-                        if (opcaoEscolhida < 0 || opcaoEscolhida > 5)
+                        if (opcaoEscolhida < 1 || opcaoEscolhida > 5)
                         {
                             Console.WriteLine("Opção digitada não existe, informe uma opção novamente.");
                         }
@@ -54,19 +54,18 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                     {
                         Console.WriteLine("Opção de menu não é válido, informe a opção novamente.");
                     }
+                    if (opcaoEscolhida == 1)
+                        calendario.ObterDiaPorExtenso();
+
+                    else if (opcaoEscolhida == 2)
+                        calendario.ObterMesPorExtenso();
+
+                    else if (opcaoEscolhida == 3)
+                        calendario.ObterAnoPorExtenso();
+
+                    else if (opcaoEscolhida == 4)
+                        calendario.ObterDataCompletaPorExtenso();
                 }
-
-                if (opcaoEscolhida == 1)
-                    calendario.ObterDiaPorExtenso();
-
-                else if (opcaoEscolhida == 2)
-                    calendario.ObterMesPorExtenso();
-
-                else if (opcaoEscolhida == 3)
-                    calendario.ObterAnoPorExtenso();
-
-                else if (opcaoEscolhida == 4)
-                    calendario.ObterDataCompletaPorExtenso();
             }
         }
     }

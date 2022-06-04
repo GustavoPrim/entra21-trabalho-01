@@ -38,7 +38,7 @@ namespace TrabalhoOrientacaoObjetos01.tests.Questao02.tests
             var anoPorExtenso = calendario.ObterAnoPorExtenso();
             anoPorExtenso.Should().Be("Mil novecentos e oitenta e nove");
         }
-        
+
         [Fact]
         public void Validar_Data_Completa_Extenso()
         {
