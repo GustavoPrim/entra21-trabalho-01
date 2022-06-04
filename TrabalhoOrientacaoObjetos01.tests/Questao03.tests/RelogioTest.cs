@@ -11,21 +11,44 @@ namespace TrabalhoOrientacaoObjetos01.tests
 {
     public class RelogioTest
     {
-        private Relogio relogio = new Relogio();
+        //Lucas Perez Alves
+
 
         [Fact]
         public void ObterHoraPorExtenso()
         {
 
-            //Arrange
-            relogio.Hora = DateTime.Now;
-            var resposta = relogio.ObterHoraPorExtenso();
-            resposta.Should().Be("Vinte e quatro horas");
-
-            
+            var relogio = new Relogio();
+            relogio.Hora = new DateTime(01);
+            var horaRelogio = relogio.ObterHoraPorExtenso();
+            horaRelogio.Should().Be("uma hora da manhã");
         }
-       
 
-        
+        [Fact]
+        public void ValidarMinutoPorExtenso()
+        {
+            var relogio = new Relogio();
+            relogio.Hora = new DateTime(30);
+            var minutoRelogio = relogio.ObterMinutosPorExtenso();
+            minutoRelogio.Should().Be("trinta");
+
+        }
+
+        [Fact]
+        public void ValidarSegundoPorExtenso()
+        {
+            var relogio = new Relogio();
+            relogio.Hora = new DateTime(01);
+            var segundoRelogio = relogio.ObterSegundosPorExtenso();
+            segundoRelogio.Should().Be("uma hora da manhã");
+
+        }
+
+        public void Validar10HorasCompletasPorExtenso()
+        {
+
+        }
+
+
     }
 }

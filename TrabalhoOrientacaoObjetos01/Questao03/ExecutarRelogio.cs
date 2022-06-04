@@ -12,6 +12,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
 
         public void Executar()
         {
+            //Lucas Perez Alves
 
             var relogio = new Relogio();
 
@@ -47,7 +48,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             }
             else if (opcaoDesejada == 3)
             {
-                relogio.ObterSegundoExtenso();
+                relogio.ObterSegundosPorExtenso();
             }
             else if (opcaoDesejada == 4)
             {
