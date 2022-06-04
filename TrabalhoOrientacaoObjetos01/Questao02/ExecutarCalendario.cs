@@ -14,6 +14,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
         {
             var calendario = new Calendario();
 
+            Console.Clear();
             Console.Write("Informe uma data(dd/MM/yyyy): ");
             calendario.Data = Convert.ToDateTime(Console.ReadLine());
 

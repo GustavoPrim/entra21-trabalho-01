@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleTables;
 
 namespace TrabalhoOrientacaoObjetos01.Questão01
 {
@@ -14,14 +15,21 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
         {
 
             Numero numero = new Numero();
-            Console.WriteLine("Informe um valor: ");
+            Console.Write("Informe um valor: ");
             numero.Valor = Convert.ToDouble(Console.ReadLine());
 
-             Console.WriteLine("O número por extenso é: "+ numero.NumeroCompletoPorExtenso());
+            var table = new ConsoleTable("Código", "Opção");
 
+            table.Configure(x => x.EnableCount = false);
+
+            table.AddRow("1", " Número completo por extenso")
+                 .AddRow("2", " Unidade por extenso")
+                 .AddRow("3", " Dezena por extenso")
+                 .AddRow("4", " Centena por extenso")
+                 .AddRow("5", " Milhar por extenso");
+
+            table.Write();
+            numero.NumeroCompletoPorExtenso();
         }
-
-
-
     }
 }

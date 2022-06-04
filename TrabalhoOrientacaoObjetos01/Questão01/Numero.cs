@@ -17,16 +17,16 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
 
-        int numeroPositivo = 0;
-        var numeroDecimalExtenso = "";
+            int numeroPositivo = 0;
+            var numeroDecimalExtenso = "";
 
-                if (Valor* 100 > numeroPositivo)
-                {
+            if (Valor * 100 > numeroPositivo)
+            {
 
-                    numeroDecimalExtenso = ObterDezenaPorExtenso()+ ObterUnidadePorExtenso() + "Décimos";
+                numeroDecimalExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso() + "Décimos";
 
-                }
-                
+            }
+
             return numeroDecimalExtenso;
         }
 
@@ -108,55 +108,55 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
             if (Valor == 10)
-                {
-                    dezenaConvertida = "Dez";
+            {
+                dezenaConvertida = "Dez";
 
-                }
-                else if (Valor == 20)
-                {
-                    dezenaConvertida = "Vinte";
+            }
+            else if (Valor == 20)
+            {
+                dezenaConvertida = "Vinte";
 
-                }
-                else if (Valor == 30)
-                {
-                     dezenaConvertida = "Trinta";
+            }
+            else if (Valor == 30)
+            {
+                dezenaConvertida = "Trinta";
 
-                }
-                else if (Valor == 40)
-                {
-                    dezenaConvertida = "Quarenta";
+            }
+            else if (Valor == 40)
+            {
+                dezenaConvertida = "Quarenta";
 
-                }
-                else if (Valor == 50)
-                {
-                    dezenaConvertida = "Cinquenta";
+            }
+            else if (Valor == 50)
+            {
+                dezenaConvertida = "Cinquenta";
 
-                }
-                else if (Valor == 60)
-                {
-                    dezenaConvertida = "Sessenta";
-                }
-                else if (Valor == 70)
-                {
+            }
+            else if (Valor == 60)
+            {
+                dezenaConvertida = "Sessenta";
+            }
+            else if (Valor == 70)
+            {
 
-                    dezenaConvertida = "Setenta";
+                dezenaConvertida = "Setenta";
 
-                }
-                else if (Valor == 80)
-                {
-                    dezenaConvertida = "Oitenta";
+            }
+            else if (Valor == 80)
+            {
+                dezenaConvertida = "Oitenta";
 
-                }
-                else if (Valor == 90)
-                {
-                    dezenaConvertida = "Noventa";
-                }
+            }
+            else if (Valor == 90)
+            {
+                dezenaConvertida = "Noventa";
+            }
 
 
 
-                return dezenaConvertida;
+            return dezenaConvertida;
 
-            
+
         }
 
         // Método 4
@@ -218,8 +218,8 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
         //Método 5
 
-    public string ObterUnidadeDeMilharPorExtenso()
-    {
+        public string ObterUnidadeDeMilharPorExtenso()
+        {
 
             string[] UnidadeMilharExtenso = new string[8];
             string unidadesMilharesConvertidas = "";
@@ -276,15 +276,15 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
 
-        Console.WriteLine(unidadesMilharesConvertidas);
-        return unidadesMilharesConvertidas;
-    }
+            Console.WriteLine(unidadesMilharesConvertidas);
+            return unidadesMilharesConvertidas;
+        }
 
         //Método 6
 
-    public string NumeroCompletoPorExtenso()
-    {
-            Valor = Valor.ToString().Length;
+        public string NumeroCompletoPorExtenso()
+        {
+            Valor.ToString();
             var numeroExtenso = "";
 
 
@@ -295,7 +295,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
             }
-            else if (Valor < 100)
+            else if (Valor > 10 || Valor < 100)
             {
 
                 numeroExtenso = ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
@@ -308,13 +308,15 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
 
             }
-            else if (Valor < 10000) {
+            else if (Valor < 10000)
+            {
 
                 numeroExtenso = ObterUnidadeDeMilharPorExtenso() + ObterCentenaPorExtenso() + ObterDezenaPorExtenso() + ObterUnidadePorExtenso();
 
 
 
             }
+            Console.WriteLine($"O número completo por extenso é {numeroExtenso}");
             return numeroExtenso;
 
             ////var resposta = ObterUnidadePorExtenso() + ObterDezenaPorExtenso() + ObterCentenaPorExtenso() + ObterUnidadeDeMilharPorExtenso();
@@ -322,8 +324,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             ////Console.WriteLine(resposta);
 
             ////return resposta;
-     }
-  }
+        }
+    }
 }
 
-      
