@@ -39,7 +39,7 @@ namespace TrabalhoOrientacaoObjetos01.tests
         {
             var relogio = new Relogio();
             relogio.Hora = new DateTime(01);
-            var segundoRelogio = relogio.ObterSegundoExtenso();
+            var segundoRelogio = relogio.ObterSegundosPorExtenso();
             segundoRelogio.Should().Be("uma hora da manhã");
 
         }
