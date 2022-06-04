@@ -476,7 +476,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
         public string ObterHoraCompleta()
         {
             var resposta = "";
-            Console.WriteLine("A hora completa é: " + ObterHoraPorExtenso() + "e" +  ObterMinutosPorExtenso() + "e" + ObterSegundosPorExtenso());
+            Console.WriteLine("A hora completa é: " + ObterHoraPorExtenso() + " " + "e" + " " +  ObterMinutosPorExtenso() + " " + "e" + " "+ ObterSegundosPorExtenso());
             resposta = Console.ReadLine();
 
             return resposta.Trim();
