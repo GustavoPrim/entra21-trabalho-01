@@ -13,26 +13,26 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
     public class NumeroTest
     {
 
-        [Fact]
-        public void Validar_Centena_Por_Extenso()
+        [Theory]
+        [InlineData(100, "Cem")]
+        [InlineData(200, "Duzentos")]
+        [InlineData(302, "Trezentos")]
+        [InlineData(403, "Quatrocentos")]
+        [InlineData(504, "Quinhentos")]
+        [InlineData(605, "Seiscentos")]
+        [InlineData(706, "Setecentos")]
+        [InlineData(807, "Oitocentos")]
+        [InlineData(908, "Novecentos")]
+
+        public void Validar_10Numeros_Extenso(int numero, string numeroExtenso)
         {
-            var numero = new Numero();
-            numero.Valor = 100;
+            var numeros = new Numero();
+            numeros.Valor = numero;
 
-            var valorConvertido = numero.ObterCentenaPorExtenso();
+            var numeroConvertido = numeros.ObterCentenaPorExtenso();
 
-            valorConvertido.Should().Be("Cem");
-
+            numeroConvertido.Should().Be(numeroExtenso);
         }
-
-
-
-
-
-
-
-
-
-
-        }
+    }
 }
+

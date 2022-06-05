@@ -14,12 +14,12 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
         public void Executar()
         {
 
-            Numero numero = new Numero();
+            var numero = new Numero();
             Console.Write("Informe um valor: ");
             numero.Valor = Convert.ToDouble(Console.ReadLine());
 
             var opcaoEscolhida = 0;
-            while (opcaoEscolhida != 6)
+            while (opcaoEscolhida != 7)
             {
                 var table = new ConsoleTable("Código", "Opção");
 
@@ -30,7 +30,8 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
                      .AddRow("3", " Dezena por extenso")
                      .AddRow("4", " Centena por extenso")
                      .AddRow("5", " Milhar por extenso")
-                     .AddRow("6", "      SAIR       ");
+                     .AddRow("6", " Decimal por extenso")
+                     .AddRow("7", "      SAIR       ");
 
                 table.Write();
 
@@ -44,7 +45,7 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
                         opcaoEscolhida = Convert.ToInt32(Console.ReadLine());
                         Console.Clear();
 
-                        if (opcaoEscolhida < 1 || opcaoEscolhida > 6)
+                        if (opcaoEscolhida < 1 || opcaoEscolhida > 7)
                         {
                             Console.WriteLine("Opção digitada não existe, informe uma opção novamente.");
                         }
@@ -72,8 +73,10 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
 
                     else if (opcaoEscolhida == 5)
                         numero.ObterUnidadeDeMilharPorExtenso();
-                }
 
+                    else if (opcaoEscolhida == 6)
+                        numero.ObterDecimalPorExtenso();
+                }
             }
         }
     }
