@@ -23,10 +23,11 @@ namespace TrabalhoOrientacaoObjetos01.Questão01
             table.Configure(x => x.EnableCount = false);
 
             table.AddRow("1", " Número completo por extenso")
-                 .AddRow("2", " Unidade por extenso")
-                 .AddRow("3", " Dezena por extenso")
-                 .AddRow("4", " Centena por extenso")
-                 .AddRow("5", " Milhar por extenso");
+                 .AddRow("2", " Decimal por extenso")
+                 .AddRow("3", " Unidade por extenso")
+                 .AddRow("4", " Dezena por extenso")
+                 .AddRow("5", " Centena por extenso")
+                 .AddRow("6", " Milhar por extenso");
 
             table.Write();
             numero.NumeroCompletoPorExtenso();
