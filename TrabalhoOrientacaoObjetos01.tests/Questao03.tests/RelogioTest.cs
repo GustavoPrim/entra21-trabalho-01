@@ -184,7 +184,7 @@ namespace TrabalhoOrientacaoObjetos01.tests
         [InlineData(59, "cinquenta e nove segundos")]
         [InlineData(00, "")]
 
-        public void Validar_SegundosPorExtenso(int segundoDigitado, string segundoEsperadoporExtenso)
+        public void Validar_SegundosPorExtenso(int segundoDigitado, string segundoEsperadoPorExtenso)
         {
             //Arrange
             var relogio = new Relogio();
@@ -192,9 +192,30 @@ namespace TrabalhoOrientacaoObjetos01.tests
             //Act
             var segundoRelogio = relogio.ObterSegundosPorExtenso();
             //Assert
-            segundoRelogio.Should().Be(segundoEsperadoporExtenso);
+            segundoRelogio.Should().Be(segundoEsperadoPorExtenso);
 
+        }
+        [Theory]
+        [InlineData(23, 12, 15, "A hora completa é: onze horas da noite e doze minutos e quinze segundos")]
+        [InlineData(18, 07, 02, "A hora completa é: seis horas da tarde e sete minutos e dois segundos")]
+        [InlineData(17, 21, 44, "A hora completa é: cinco horas da tarde e vinte e um minutos e quarenta e quatro segundos")]
+        [InlineData(21, 02, 21, "A hora completa é: nove horas da noite e dois minutos e vinte e um segundos")]
+        [InlineData(15, 15, 33, "A hora completa é: três horas da tarde e quinze minutos e trinta e três segundos")]
+        [InlineData(13, 22, 19, "A hora completa é: uma horas da tarde e vinte e dois minutos e dezenove segundos")]
+        [InlineData(02, 09, 02, "A hora completa é: duas horas da manhã e nove minutos e dois segundos")]
+        [InlineData(00, 19, 45, "A hora completa é: meia noite e dezenove minutos e quarenta e cinco segundos")]
+        [InlineData(22, 16, 22, "A hora completa é: dez horas da noite e dezesseis minutos e vinte e dois segundos")]
+        [InlineData(02, 12, 55, "A hora completa é: duas horas da manhã e doze minutos e cinquenta e cinco segundos")]
 
+        public void Validar_ObterHoraCompleta(int horaDigitada, int minutoDigitado, int segundoDigitado, string horaCompletaEsperada)
+        {
+            //Arrange
+            var relogio = new Relogio();
+            relogio.Hora = DateTime.Today.AddHours(horaDigitada).AddMinutes(minutoDigitado).AddSeconds(segundoDigitado);
+            //Act
+            var horaCompleta = relogio.ObterHoraCompleta();
+            //Assert
+            horaCompleta.Should().Be(horaCompletaEsperada);
         }
     }
 }
