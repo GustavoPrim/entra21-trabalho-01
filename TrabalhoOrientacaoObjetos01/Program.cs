@@ -41,7 +41,7 @@ while (opcaoDesejada != 4)
 
         if (opcaoDesejada == 1)
         {
-            ExercicioNumero numero = new ExercicioNumero();
+            ExecutarNumero numero = new ExecutarNumero();
             numero.Executar();
         }
         else if (opcaoDesejada == 2)
